@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-cal: "Cal Sans";
-}
-
 h1,
 h2,
 h3,

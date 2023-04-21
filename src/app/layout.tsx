@@ -1,10 +1,17 @@
 import "./globals.css";
+import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "cal-sans";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const cal = localFont({
+  src: "../../node_modules/cal-sans/fonts/webfonts/CalSans-SemiBold.woff2",
+  display: "swap",
+  variable: "--font-cal",
 });
 
 export default function RootLayout({
@@ -14,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${inter.variable} ${cal.variable} font-sans`}>
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
           aria-hidden="true"
