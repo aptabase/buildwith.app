@@ -16,4 +16,11 @@ export const dotnetmaui: Framework = {
     href: "https://github.com/dotnet/maui",
     stars: 18_800,
   },
+  discord: [
+    {
+      name: "Xamarin & MAUI",
+      href: "https://discord.com/invite/fB6yfFhrX9",
+      members: 797,
+    },
+  ],
 };

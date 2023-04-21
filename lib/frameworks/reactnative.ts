@@ -20,4 +20,16 @@ export const reactnative: Framework = {
     slug: "reactnative",
     followers: 174_900,
   },
+  discord: [
+    {
+      name: "Callstack",
+      href: "https://discord.com/invite/zwR2Cdh",
+      members: 5_882,
+    },
+    {
+      name: "Expo Developers",
+      href: "https://discord.com/invite/TercuSpcC7",
+      members: 15_843,
+    },
+  ],
 };

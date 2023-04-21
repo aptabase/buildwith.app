@@ -20,4 +20,11 @@ export const capacitor: Framework = {
     slug: "capacitorjs",
     followers: 16_900,
   },
+  discord: [
+    {
+      name: "Ionic",
+      href: "https://discord.com/invite/UPYYRhtyzp",
+      members: 6260,
+    },
+  ],
 };

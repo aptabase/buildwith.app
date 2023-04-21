@@ -26,6 +26,11 @@ export type Framework = {
     slug: string;
     followers: number;
   };
+  discord: Array<{
+    name: string;
+    href: string;
+    members: number;
+  }>;
 };
 
 export const frameworks = [
