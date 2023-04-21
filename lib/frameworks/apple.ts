@@ -9,6 +9,10 @@ export const apple: Framework = {
   languages: ["swift"],
   reddit: {
     href: "https://www.reddit.com/r/iOSdev/",
-    members: "125k",
+    members: 125_000,
+  },
+  twitter: {
+    slug: "AndroidDev",
+    followers: 2_200_000,
   },
 };

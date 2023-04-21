@@ -10,10 +10,10 @@ export const dotnetmaui: Framework = {
   languages: ["csharp"],
   reddit: {
     href: "https://www.reddit.com/r/dotnetMAUI/",
-    members: "3.1k",
+    members: 3_100,
   },
   github: {
     href: "https://github.com/dotnet/maui",
-    stars: 18800,
+    stars: 18_800,
   },
 };

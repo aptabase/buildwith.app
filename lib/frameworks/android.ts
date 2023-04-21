@@ -9,6 +9,10 @@ export const android: Framework = {
   languages: ["java", "kotlin"],
   reddit: {
     href: "https://www.reddit.com/r/androiddev/",
-    members: "211k",
+    members: 211_000,
+  },
+  twitter: {
+    slug: "AndroidDev",
+    followers: 2_200_000,
   },
 };

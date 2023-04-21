@@ -16,11 +16,15 @@ export type Framework = {
   languages: string[];
   reddit: {
     href: string;
-    members: string;
+    members: number;
   };
   github?: {
     href: string;
     stars: number;
+  };
+  twitter?: {
+    slug: string;
+    followers: number;
   };
 };
 

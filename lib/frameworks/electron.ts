@@ -10,10 +10,14 @@ export const electron: Framework = {
   languages: ["javascript", "typscript", "html", "css"],
   reddit: {
     href: "https://www.reddit.com/r/electronjs/",
-    members: "7.4k",
+    members: 7_400,
   },
   github: {
     href: "https://github.com/electron/electron",
     stars: 107000,
+  },
+  twitter: {
+    slug: "electronjs",
+    followers: 36_300,
   },
 };

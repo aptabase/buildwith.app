@@ -10,10 +10,14 @@ export const reactnative: Framework = {
   languages: ["javascript", "typscript"],
   reddit: {
     href: "https://www.reddit.com/r/reactnative/",
-    members: "103k",
+    members: 103_000,
   },
   github: {
     href: "https://github.com/facebook/react-native",
     stars: 109000,
+  },
+  twitter: {
+    slug: "reactnative",
+    followers: 174_900,
   },
 };

@@ -10,10 +10,14 @@ export const tauri: Framework = {
   languages: ["rust", "javascript", "typscript", "html", "css"],
   reddit: {
     href: "https://www.reddit.com/r/tauri/",
-    members: "462",
+    members: 462,
   },
   github: {
     href: "https://github.com/tauri-apps/tauri",
     stars: 62500,
+  },
+  twitter: {
+    slug: "TauriApps",
+    followers: 9_600,
   },
 };

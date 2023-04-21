@@ -10,10 +10,14 @@ export const capacitor: Framework = {
   languages: ["javascript", "typscript", "html", "css"],
   reddit: {
     href: "https://www.reddit.com/r/capacitor/",
-    members: "498",
+    members: 498,
   },
   github: {
     href: "https://github.com/ionic-team/capacitor",
-    stars: 9200,
+    stars: 9_200,
+  },
+  twitter: {
+    slug: "capacitorjs",
+    followers: 16_900,
   },
 };

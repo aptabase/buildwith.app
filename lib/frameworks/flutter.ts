@@ -10,10 +10,14 @@ export const flutter: Framework = {
   languages: ["dart"],
   reddit: {
     href: "https://www.reddit.com/r/FlutterDev/",
-    members: "107k",
+    members: 107_000,
   },
   github: {
     href: "https://github.com/flutter/flutter",
     stars: 152000,
+  },
+  twitter: {
+    slug: "FlutterDev",
+    followers: 229_600,
   },
 };
