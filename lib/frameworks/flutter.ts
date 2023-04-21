@@ -12,4 +12,8 @@ export const flutter: Framework = {
     href: "https://www.reddit.com/r/FlutterDev/",
     members: "107k",
   },
+  github: {
+    href: "https://github.com/flutter/flutter",
+    stars: 152000,
+  },
 };

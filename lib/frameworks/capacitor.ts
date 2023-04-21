@@ -12,4 +12,8 @@ export const capacitor: Framework = {
     href: "https://www.reddit.com/r/capacitor/",
     members: "498",
   },
+  github: {
+    href: "https://github.com/ionic-team/capacitor",
+    stars: 9200,
+  },
 };

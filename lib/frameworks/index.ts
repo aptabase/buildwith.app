@@ -18,6 +18,10 @@ export type Framework = {
     href: string;
     members: string;
   };
+  github?: {
+    href: string;
+    stars: number;
+  };
 };
 
 export const frameworks = [

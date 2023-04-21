@@ -12,4 +12,8 @@ export const tauri: Framework = {
     href: "https://www.reddit.com/r/tauri/",
     members: "462",
   },
+  github: {
+    href: "https://github.com/tauri-apps/tauri",
+    stars: 62500,
+  },
 };

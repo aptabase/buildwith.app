@@ -12,4 +12,8 @@ export const dotnetmaui: Framework = {
     href: "https://www.reddit.com/r/dotnetMAUI/",
     members: "3.1k",
   },
+  github: {
+    href: "https://github.com/dotnet/maui",
+    stars: 18800,
+  },
 };

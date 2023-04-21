@@ -12,4 +12,8 @@ export const reactnative: Framework = {
     href: "https://www.reddit.com/r/reactnative/",
     members: "103k",
   },
+  github: {
+    href: "https://github.com/facebook/react-native",
+    stars: 109000,
+  },
 };

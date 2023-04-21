@@ -12,4 +12,8 @@ export const electron: Framework = {
     href: "https://www.reddit.com/r/electronjs/",
     members: "7.4k",
   },
+  github: {
+    href: "https://github.com/electron/electron",
+    stars: 107000,
+  },
 };
