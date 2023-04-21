@@ -8,4 +8,8 @@ export const tauri: Framework = {
   href: "https://tauri.app",
   logoUrl: "https://aptabase.com/tools/tauri.svg",
   languages: ["rust", "javascript", "typscript", "html", "css"],
+  reddit: {
+    href: "https://www.reddit.com/r/tauri/",
+    members: "462",
+  },
 };

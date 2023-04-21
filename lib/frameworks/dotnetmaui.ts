@@ -8,4 +8,8 @@ export const dotnetmaui: Framework = {
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
   logoUrl: "https://aptabase.com/tools/dotnet.png",
   languages: ["csharp"],
+  reddit: {
+    href: "https://www.reddit.com/r/dotnetMAUI/",
+    members: "3.1k",
+  },
 };

@@ -14,6 +14,10 @@ export type Framework = {
   href: string;
   logoUrl: string;
   languages: string[];
+  reddit: {
+    href: string;
+    members: string;
+  };
 };
 
 export const frameworks = [
