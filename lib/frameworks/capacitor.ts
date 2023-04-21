@@ -9,7 +9,7 @@ export const capacitor: Framework = {
   logoUrl: "https://aptabase.com/tools/capacitor-js.svg",
   languages: ["javascript", "typscript", "html", "css"],
   reddit: {
-    href: "https://www.reddit.com/r/capacitor/",
+    href: "https://reddit.com/r/capacitor/",
     members: 498,
   },
   github: {

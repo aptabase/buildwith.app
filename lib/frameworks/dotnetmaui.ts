@@ -9,7 +9,7 @@ export const dotnetmaui: Framework = {
   logoUrl: "https://aptabase.com/tools/dotnet.png",
   languages: ["csharp"],
   reddit: {
-    href: "https://www.reddit.com/r/dotnetMAUI/",
+    href: "https://reddit.com/r/dotnetMAUI/",
     members: 3_100,
   },
   github: {

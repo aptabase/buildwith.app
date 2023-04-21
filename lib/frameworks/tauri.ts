@@ -9,7 +9,7 @@ export const tauri: Framework = {
   logoUrl: "https://aptabase.com/tools/tauri.svg",
   languages: ["rust", "javascript", "typscript", "html", "css"],
   reddit: {
-    href: "https://www.reddit.com/r/tauri/",
+    href: "https://reddit.com/r/tauri/",
     members: 462,
   },
   github: {

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
 import { frameworks, getFramework } from "@lib/frameworks";
 import Link from "next/link";
 
@@ -49,6 +50,21 @@ export default function Framework(props: Props) {
                   </h1>
                 </div>
                 <p className="mt-6 text-base text-zinc-600">{fw.description}</p>
+                <ul className="mt-2 flex space-x-4">
+                  {fw.github && (
+                    <li>
+                      <GitHubTag {...fw.github} />
+                    </li>
+                  )}
+                  <li>
+                    <RedditTag {...fw.reddit} />
+                  </li>
+                  {(fw.discord || []).map((d) => (
+                    <li key={d.href}>
+                      <DiscordTag {...d} />
+                    </li>
+                  ))}
+                </ul>
               </header>
             </div>
           </div>

@@ -8,7 +8,7 @@ export const android: Framework = {
   logoUrl: "https://aptabase.com/tools/android.svg",
   languages: ["java", "kotlin"],
   reddit: {
-    href: "https://www.reddit.com/r/androiddev/",
+    href: "https://reddit.com/r/androiddev/",
     members: 211_000,
   },
   twitter: {

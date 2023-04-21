@@ -9,7 +9,7 @@ export const electron: Framework = {
   logoUrl: "https://aptabase.com/tools/electron.svg",
   languages: ["javascript", "typscript", "html", "css"],
   reddit: {
-    href: "https://www.reddit.com/r/electronjs/",
+    href: "https://reddit.com/r/electronjs/",
     members: 7_400,
   },
   github: {

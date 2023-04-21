@@ -8,7 +8,7 @@ export const apple: Framework = {
   logoUrl: "https://aptabase.com/tools/apple.svg",
   languages: ["swift"],
   reddit: {
-    href: "https://www.reddit.com/r/iOSdev/",
+    href: "https://reddit.com/r/iOSdev/",
     members: 125_000,
   },
   twitter: {
