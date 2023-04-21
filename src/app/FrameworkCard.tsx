@@ -1,4 +1,5 @@
 import { Framework } from "@lib/frameworks";
+import Link from "next/link";
 
 /* eslint-disable @next/next/no-img-element */
 type Props = {
@@ -7,8 +8,8 @@ type Props = {
 
 export function FrameworkCard(props: Props) {
   return (
-    <a
-      href={props.framework.href}
+    <Link
+      href={props.framework.slug}
       className="group relative flex flex-col items-start rounded-lg hover:bg-zinc-50 p-2"
     >
       <div className="flex items-center space-x-2">
@@ -33,6 +34,6 @@ export function FrameworkCard(props: Props) {
           </li>
         ))}
       </ul>
-    </a>
+    </Link>
   );
 }

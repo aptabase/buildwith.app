@@ -26,3 +26,11 @@ export const frameworks = [
   reactnative,
   tauri,
 ];
+
+export function getFramework(slug: string): Framework {
+  const fw = frameworks.find((framework) => framework.slug === slug);
+  if (!fw) {
+    throw new Error(`Framework ${slug} not found`);
+  }
+  return fw;
+}
