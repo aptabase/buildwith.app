@@ -9,7 +9,7 @@ export function GitHubTag(props: Props) {
     <a
       href={props.href}
       rel="nofollow"
-      className="inline-flex items-center space-x-2 bg-zinc-50 hover:bg-black/10 p-1 rounded"
+      className="inline-flex items-center space-x-2 bg-zinc-50 hover:bg-black/10 py-0.5 px-2 rounded"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

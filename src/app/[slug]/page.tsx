@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
-import { frameworks, getFramework } from "@lib/frameworks";
+import { frameworks, getFramework, platforms } from "@lib/frameworks";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -50,7 +50,8 @@ export default function Framework(props: Props) {
                   </h1>
                 </div>
                 <p className="mt-6 text-base text-zinc-600">{fw.description}</p>
-                <ul className="mt-2 flex space-x-4">
+                <ul className="mt-2 flex flex-col space-y-2">
+                  <h3>Community</h3>
                   {fw.github && (
                     <li>
                       <GitHubTag {...fw.github} />
@@ -62,6 +63,24 @@ export default function Framework(props: Props) {
                   {(fw.discord || []).map((d) => (
                     <li key={d.href}>
                       <DiscordTag {...d} />
+                    </li>
+                  ))}
+                </ul>
+
+                <ul className="mt-2 flex flex-col">
+                  <h3>Supported Platforms</h3>
+                  {platforms.map((p) => (
+                    <li key={p}>
+                      <div
+                        className={`px-0.5 py-0.5 inline-flex items-center text-sm space-x-1 ${
+                          fw.platforms.includes(p)
+                            ? "bg-green-50"
+                            : "bg-zinc-50 line-through"
+                        }`}
+                      >
+                        <span>{fw.platforms.includes(p) ? "✓" : ""}</span>{" "}
+                        <span>{p}</span>
+                      </div>
                     </li>
                   ))}
                 </ul>
