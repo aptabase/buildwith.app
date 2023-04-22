@@ -7,6 +7,7 @@ export const dotnetmaui: Framework = {
     "MAUI is a cross-platform .NET framework for building native device applications spanning mobile, tablet, and desktop.",
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
   logoUrl: "https://aptabase.com/tools/dotnet.png",
+  platforms: ["ios", "android", "macos", "windows"],
   languages: ["csharp"],
   reddit: {
     href: "https://reddit.com/r/dotnetMAUI/",

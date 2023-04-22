@@ -8,6 +8,7 @@ export const flutter: Framework = {
   href: "https://flutter.dev/",
   logoUrl: "https://aptabase.com/tools/flutter.svg",
   languages: ["dart"],
+  platforms: ["linux", "macos", "windows", "ios", "android"],
   reddit: {
     href: "https://reddit.com/r/FlutterDev/",
     members: 107_000,

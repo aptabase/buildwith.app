@@ -14,6 +14,7 @@ export type Framework = {
   href: string;
   logoUrl: string;
   languages: string[];
+  platforms: string[];
   reddit: {
     href: string;
     members: number;

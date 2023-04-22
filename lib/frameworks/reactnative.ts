@@ -8,6 +8,7 @@ export const reactnative: Framework = {
   href: "https://reactnative.dev",
   logoUrl: "https://aptabase.com/tools/react-native.svg",
   languages: ["javascript", "typscript"],
+  platforms: ["tvos", "android_tv", "macos", "windows", "ios", "android"],
   reddit: {
     href: "https://reddit.com/r/reactnative/",
     members: 103_000,

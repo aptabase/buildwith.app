@@ -8,6 +8,7 @@ export const electron: Framework = {
   href: "https://www.electronjs.org",
   logoUrl: "https://aptabase.com/tools/electron.svg",
   languages: ["javascript", "typscript", "html", "css"],
+  platforms: ["linux", "macos", "windows"],
   reddit: {
     href: "https://reddit.com/r/electronjs/",
     members: 7_400,
