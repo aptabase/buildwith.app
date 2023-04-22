@@ -3,6 +3,7 @@ import { Framework } from "./";
 export const nativescript: Framework = {
   slug: "nativescript",
   name: "Native Script",
+  maintainer: "OpenJS Foundation",
   description: "Build truly native apps with JavaScript.",
   pros: [
     {

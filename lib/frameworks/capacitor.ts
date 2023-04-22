@@ -3,6 +3,7 @@ import { Framework } from "./";
 export const capacitor: Framework = {
   slug: "capacitor",
   name: "Capacitor",
+  maintainer: "Ionic",
   description: "Build mobile applications using JavaScript, HTML and CSS.",
   pros: [
     {

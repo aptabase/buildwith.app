@@ -3,6 +3,7 @@ import { Framework } from "./";
 export const dotnetmaui: Framework = {
   slug: "dotnetmaui",
   name: ".NET MAUI",
+  maintainer: "Microsoft",
   description:
     "Cross-platform .NET framework for building native mobile and desktop applications.",
   pros: [

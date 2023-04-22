@@ -3,6 +3,7 @@ import { Framework } from "./";
 export const electron: Framework = {
   slug: "electron",
   name: "Electron",
+  maintainer: "OpenJS Foundation",
   description: "Build desktop applications using JavaScript, HTML, and CSS.",
   pros: [
     {

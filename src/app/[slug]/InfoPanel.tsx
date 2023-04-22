@@ -11,6 +11,10 @@ export function InfoPanel(props: Props) {
       <ul className="mt-2 flex flex-col space-y-1 min-w-[12rem]">
         <h3>About</h3>
         <li className="py-0.5 text-sm">
+          <p className="text-xs text-zinc-600">Maintainer</p>
+          {props.framework.maintainer}
+        </li>
+        <li className="py-0.5 text-sm">
           <p className="text-xs text-zinc-600">Initial Release</p>
           {props.framework.releases.first}
         </li>

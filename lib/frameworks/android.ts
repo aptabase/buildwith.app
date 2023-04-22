@@ -3,6 +3,7 @@ import { Framework } from "./";
 export const android: Framework = {
   slug: "android",
   name: "Android (Native)",
+  maintainer: "Google",
   description: "Build truly native apps for Android devices.",
   pros: [
     {

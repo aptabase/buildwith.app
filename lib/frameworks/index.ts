@@ -11,6 +11,7 @@ import { tauri } from "./tauri";
 export type Framework = {
   slug: string;
   name: string;
+  maintainer: string;
   description: string;
   releases: {
     first: string;
