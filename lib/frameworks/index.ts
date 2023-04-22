@@ -4,6 +4,7 @@ import { capacitor } from "./capacitor";
 import { dotnetmaui } from "./dotnetmaui";
 import { electron } from "./electron";
 import { flutter } from "./flutter";
+import { nativescript } from "./nativescript";
 import { reactnative } from "./reactnative";
 import { tauri } from "./tauri";
 
@@ -51,6 +52,7 @@ export const frameworks = [
   apple,
   dotnetmaui,
   electron,
+  nativescript,
   flutter,
   reactnative,
   tauri,

@@ -60,7 +60,7 @@ export default function Framework(props: Props) {
                     <ul className="space-y-2">
                       <h3 className="flex items-center space-x-1">
                         <span>✅</span>
-                        <span className="text-2xl">Benefits</span>
+                        <span className="text-2xl">Strengths</span>
                       </h3>
                       {fw.pros.map((p) => (
                         <li key={p.title}>
@@ -76,7 +76,7 @@ export default function Framework(props: Props) {
                     <ul className="space-y-2">
                       <h3 className="flex items-center space-x-1">
                         <span>🛑</span>
-                        <span className="text-2xl">Drawbacks</span>
+                        <span className="text-2xl">Weaknesses</span>
                       </h3>
                       {fw.cons.map((p) => (
                         <li key={p.title}>
