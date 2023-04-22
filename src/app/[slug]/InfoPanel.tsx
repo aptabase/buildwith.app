@@ -7,8 +7,8 @@ type Props = {
 
 export function InfoPanel(props: Props) {
   return (
-    <div>
-      <ul className="mt-2 flex flex-col space-y-1">
+    <div className="flex flex-col space-y-8">
+      <ul className="mt-2 flex flex-col space-y-1 min-w-[12rem]">
         <h3>Community</h3>
         {props.framework.github && (
           <li>
