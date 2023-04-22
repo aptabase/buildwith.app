@@ -38,6 +38,9 @@ export const apple: Framework = {
         "Developers have to build separate apps using a different framework to target other platforms like Android and Windows.",
     },
   ],
+  releases: {
+    first: "March 6, 2008",
+  },
   href: "https://developer.apple.com/",
   logoUrl: "https://aptabase.com/tools/apple.svg",
   languages: ["Swift"],

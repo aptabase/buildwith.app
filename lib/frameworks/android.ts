@@ -43,6 +43,9 @@ export const android: Framework = {
         "Developers have to build separate apps using a different framework to target other platforms like iOS, Windows and macOS.",
     },
   ],
+  releases: {
+    first: "September 23, 2008",
+  },
   href: "https://developer.android.com/",
   logoUrl: "https://aptabase.com/tools/android.svg",
   languages: ["Java", "Kotlin"],

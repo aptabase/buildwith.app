@@ -11,6 +11,9 @@ export type Framework = {
   slug: string;
   name: string;
   description: string;
+  releases: {
+    first: string;
+  };
   pros: Array<{
     title: string;
     description: string;

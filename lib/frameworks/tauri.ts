@@ -49,6 +49,9 @@ export const tauri: Framework = {
         "Despite being popular, even for experienced developers can struggle to learn Rust. Developers can get away building Tauri apps without knowing Rust, but eventually they will need to learn Rust to build more complex features.",
     },
   ],
+  releases: {
+    first: "June 19, 2022",
+  },
   href: "https://tauri.app",
   logoUrl: "https://aptabase.com/tools/tauri.svg",
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],

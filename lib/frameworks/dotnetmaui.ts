@@ -29,6 +29,9 @@ export const dotnetmaui: Framework = {
         ".NET MAUI apps are built with C#, which is easy to get started with. But MAUI itself is a complex framework with very little documentation.",
     },
   ],
+  releases: {
+    first: "May 23, 2022",
+  },
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
   logoUrl: "https://aptabase.com/tools/dotnet.png",
   platforms: ["iOS", "Android", "macOS", "Windows"],

@@ -29,6 +29,9 @@ export const reactnative: Framework = {
         "React Native's performance is not as good as that of native apps due to the overhead introduced by the bridge between JavaScript and native code.",
     },
   ],
+  releases: {
+    first: "March 26, 2015",
+  },
   href: "https://reactnative.dev",
   logoUrl: "https://aptabase.com/tools/react-native.svg",
   languages: ["JavaScript", "TypeScript"],

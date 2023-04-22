@@ -44,6 +44,9 @@ export const flutter: Framework = {
         "Flutter apps tend to be larger than native apps due to Flutter engine being bundled with them.",
     },
   ],
+  releases: {
+    first: "May 12, 2017",
+  },
   href: "https://flutter.dev/",
   logoUrl: "https://aptabase.com/tools/flutter.svg",
   languages: ["Dart"],

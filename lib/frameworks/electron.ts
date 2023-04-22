@@ -44,6 +44,9 @@ export const electron: Framework = {
         "Electron can only target desktop environments like Windows, macOS and Linux.",
     },
   ],
+  releases: {
+    first: "15 July 2013",
+  },
   href: "https://www.electronjs.org",
   logoUrl: "https://aptabase.com/tools/electron.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],

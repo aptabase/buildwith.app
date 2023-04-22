@@ -39,6 +39,9 @@ export const capacitor: Framework = {
         "Capacitor is a relatively new framework, which means that there is not a lot of documentation, tutorials, and examples available to help developers apps.",
     },
   ],
+  releases: {
+    first: "May 22, 2019",
+  },
   href: "https://capacitorjs.com",
   logoUrl: "https://aptabase.com/tools/capacitor-js.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
