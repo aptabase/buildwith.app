@@ -19,7 +19,7 @@ export const electron: Framework = {
     {
       title: "Native APIs",
       description:
-        "Electron provides a bridge between the web technologies and the native APIs of the operating systems. This means that developers can access native functionality like the menu bar, tray and notifications.",
+        "Electron provides a bridge between the web technologies and the native APIs of the operating systems. This means that developers can access native functionality like the menu bar, tray and much more.",
     },
     {
       title: "Large Community",

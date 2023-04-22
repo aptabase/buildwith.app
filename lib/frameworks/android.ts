@@ -8,7 +8,7 @@ export const android: Framework = {
     {
       title: "Official SDK",
       description:
-        "Native apps are built using the official Android development tools, which provide access to the latest features and functionality of the Android platform.",
+        "Native Android apps are built using the official Android development tools, which provide access to the latest features and functionality of the Android platform.",
     },
     {
       title: "Performance",
@@ -16,9 +16,14 @@ export const android: Framework = {
         "Native Android apps perform better than hybrid apps as they have direct access to device hardware and the underlying operating system.",
     },
     {
+      title: "User Interface",
+      description:
+        "Developers can use built-in UI elements to create a consistent interface that follows the Android design guidelines.",
+    },
+    {
       title: "User Experience",
       description:
-        "Native Android apps offer a consistent user experience that users are familiar with.",
+        "Native Android apps offer a familiar user experience for Android users.",
     },
     {
       title: "Ecosystem",
