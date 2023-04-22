@@ -18,7 +18,7 @@ export function FrameworkCard(props: Props) {
           loading="lazy"
           decoding="async"
           className="h-6 w-6 rounded"
-          src={props.framework.logoUrl}
+          src={props.framework.logo_url}
         />
         <h2 className="text-2xl font-semibold text-zinc-800">
           {props.framework.name}

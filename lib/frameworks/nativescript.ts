@@ -5,6 +5,8 @@ export const nativescript: Framework = {
   name: "Native Script",
   maintainer: "OpenJS Foundation",
   short_description: "Build truly native apps with JavaScript.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -33,7 +35,7 @@ export const nativescript: Framework = {
     first: "April 29, 2015",
   },
   href: "https://nativescript.org/",
-  logoUrl: "https://aptabase.com/tools/nativescript.svg",
+  logo_url: "https://aptabase.com/tools/nativescript.svg",
   languages: ["JavaScript", "TypeScript"],
   platforms: ["iOS", "Android"],
   reddit: {

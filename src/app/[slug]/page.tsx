@@ -19,7 +19,7 @@ export async function generateMetadata(props: Props) {
   const fw = getFramework(props.params.slug);
   return {
     title: `${fw.name} - BuildWith.app`,
-    description: `Learn more about how ${fw.name} can help you build apps`,
+    description: `${fw.name}: ${fw.short_description}`,
   };
 }
 
@@ -44,7 +44,7 @@ export default function Framework(props: Props) {
                     loading="lazy"
                     decoding="async"
                     className="h-12 w-12 rounded"
-                    src={fw.logoUrl}
+                    src={fw.logo_url}
                   />
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
                     {fw.name}

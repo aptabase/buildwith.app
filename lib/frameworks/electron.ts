@@ -6,6 +6,8 @@ export const electron: Framework = {
   maintainer: "OpenJS Foundation",
   short_description:
     "Build desktop applications using JavaScript, HTML, and CSS.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -49,7 +51,7 @@ export const electron: Framework = {
     first: "15 July 2013",
   },
   href: "https://www.electronjs.org",
-  logoUrl: "https://aptabase.com/tools/electron.svg",
+  logo_url: "https://aptabase.com/tools/electron.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows"],
   reddit: {

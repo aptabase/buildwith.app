@@ -5,6 +5,8 @@ export const android: Framework = {
   name: "Android (Native)",
   maintainer: "Google",
   short_description: "Build truly native apps for Android devices.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Official SDK",
@@ -48,7 +50,7 @@ export const android: Framework = {
     first: "September 23, 2008",
   },
   href: "https://developer.android.com/",
-  logoUrl: "https://aptabase.com/tools/android.svg",
+  logo_url: "https://aptabase.com/tools/android.svg",
   languages: ["Java", "Kotlin"],
   platforms: ["Android", "Wear Os", "Android TV", "Android Auto"],
   reddit: {

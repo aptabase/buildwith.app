@@ -6,6 +6,8 @@ export const reactnative: Framework = {
   maintainer: "Facebook",
   short_description:
     "Build native mobile applications by compiling JavaScript code to native Android/iOS.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -34,7 +36,7 @@ export const reactnative: Framework = {
     first: "March 26, 2015",
   },
   href: "https://reactnative.dev",
-  logoUrl: "https://aptabase.com/tools/react-native.svg",
+  logo_url: "https://aptabase.com/tools/react-native.svg",
   languages: ["JavaScript", "TypeScript"],
   platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android"],
   reddit: {

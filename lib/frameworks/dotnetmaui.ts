@@ -6,6 +6,8 @@ export const dotnetmaui: Framework = {
   maintainer: "Microsoft",
   short_description:
     "Cross-platform .NET framework for building native mobile and desktop applications.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -34,7 +36,7 @@ export const dotnetmaui: Framework = {
     first: "May 23, 2022",
   },
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
-  logoUrl: "https://aptabase.com/tools/dotnet.png",
+  logo_url: "https://aptabase.com/tools/dotnet.png",
   platforms: ["iOS", "Android", "macOS", "Windows"],
   languages: ["C#"],
   reddit: {

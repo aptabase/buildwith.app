@@ -6,6 +6,8 @@ export const flutter: Framework = {
   maintainer: "Google",
   short_description:
     "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -49,7 +51,7 @@ export const flutter: Framework = {
     first: "May 12, 2017",
   },
   href: "https://flutter.dev/",
-  logoUrl: "https://aptabase.com/tools/flutter.svg",
+  logo_url: "https://aptabase.com/tools/flutter.svg",
   languages: ["Dart"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {

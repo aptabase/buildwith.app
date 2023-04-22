@@ -6,6 +6,8 @@ export const tauri: Framework = {
   maintainer: "Tauri Foundation",
   short_description:
     "Build optimized, secure, and frontend-independent desktop and mobile applications using Web Technologies.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -54,7 +56,7 @@ export const tauri: Framework = {
     first: "June 19, 2022",
   },
   href: "https://tauri.app",
-  logoUrl: "https://aptabase.com/tools/tauri.svg",
+  logo_url: "https://aptabase.com/tools/tauri.svg",
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {

@@ -5,6 +5,8 @@ export const apple: Framework = {
   name: "Apple (Native)",
   maintainer: "Apple",
   short_description: "Build truly native apps for Apple devices using Swift.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Official SDK",
@@ -43,7 +45,7 @@ export const apple: Framework = {
     first: "March 6, 2008",
   },
   href: "https://developer.apple.com/",
-  logoUrl: "https://aptabase.com/tools/apple.svg",
+  logo_url: "https://aptabase.com/tools/apple.svg",
   languages: ["Swift"],
   platforms: ["iOS", "tvOS", "watchOS", "macOS"],
   reddit: {

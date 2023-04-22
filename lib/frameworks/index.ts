@@ -13,6 +13,8 @@ export type Framework = {
   name: string;
   maintainer: string;
   short_description: string;
+  long_description: string;
+  best_for: string;
   releases: {
     first: string;
   };
@@ -25,7 +27,7 @@ export type Framework = {
     description: string;
   }>;
   href: string;
-  logoUrl: string;
+  logo_url: string;
   languages: string[];
   platforms: string[];
   reddit: {

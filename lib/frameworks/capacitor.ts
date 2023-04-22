@@ -6,6 +6,8 @@ export const capacitor: Framework = {
   maintainer: "Ionic",
   short_description:
     "Build mobile applications using JavaScript, HTML and CSS.",
+  long_description: "",
+  best_for: "",
   pros: [
     {
       title: "Cross-platform",
@@ -44,7 +46,7 @@ export const capacitor: Framework = {
     first: "May 22, 2019",
   },
   href: "https://capacitorjs.com",
-  logoUrl: "https://aptabase.com/tools/capacitor-js.svg",
+  logo_url: "https://aptabase.com/tools/capacitor-js.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["iOS", "Android"],
   reddit: {
