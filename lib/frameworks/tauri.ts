@@ -31,6 +31,11 @@ export const tauri: Framework = {
       description:
         "Apps built with Tauri can be very performant due to use of Rust on the backend. Developers must be careful to avoid performance pitfalls in the frontend, however.",
     },
+    {
+      title: "Plugins",
+      description:
+        "Tauri has a plugin system that allows developers to extend the functionality of their apps. There are many plugins available to help developers build apps faster.",
+    },
   ],
   cons: [
     {
