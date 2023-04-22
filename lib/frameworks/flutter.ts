@@ -4,7 +4,7 @@ export const flutter: Framework = {
   slug: "flutter",
   name: "Flutter",
   maintainer: "Google",
-  description:
+  short_description:
     "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
   pros: [
     {

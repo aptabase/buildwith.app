@@ -12,7 +12,7 @@ export type Framework = {
   slug: string;
   name: string;
   maintainer: string;
-  description: string;
+  short_description: string;
   releases: {
     first: string;
   };

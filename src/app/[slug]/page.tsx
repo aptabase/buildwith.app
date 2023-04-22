@@ -54,7 +54,7 @@ export default function Framework(props: Props) {
               <div className="md:flex justify-between gap-8">
                 <div>
                   <p className="mt-6 text-base text-zinc-600">
-                    {fw.description}
+                    {fw.short_description}
                   </p>
                   <div className="mt-8 grid md:grid-cols-2 justify-between gap-8">
                     <ul className="space-y-2">

@@ -4,7 +4,7 @@ export const tauri: Framework = {
   slug: "tauri",
   name: "Tauri",
   maintainer: "Tauri Foundation",
-  description:
+  short_description:
     "Build optimized, secure, and frontend-independent desktop and mobile applications using Web Technologies.",
   pros: [
     {

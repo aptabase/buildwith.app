@@ -4,7 +4,7 @@ export const apple: Framework = {
   slug: "apple",
   name: "Apple (Native)",
   maintainer: "Apple",
-  description: "Build truly native apps for Apple devices using Swift.",
+  short_description: "Build truly native apps for Apple devices using Swift.",
   pros: [
     {
       title: "Official SDK",

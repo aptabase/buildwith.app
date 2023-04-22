@@ -4,7 +4,7 @@ export const android: Framework = {
   slug: "android",
   name: "Android (Native)",
   maintainer: "Google",
-  description: "Build truly native apps for Android devices.",
+  short_description: "Build truly native apps for Android devices.",
   pros: [
     {
       title: "Official SDK",

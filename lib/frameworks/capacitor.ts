@@ -4,7 +4,8 @@ export const capacitor: Framework = {
   slug: "capacitor",
   name: "Capacitor",
   maintainer: "Ionic",
-  description: "Build mobile applications using JavaScript, HTML and CSS.",
+  short_description:
+    "Build mobile applications using JavaScript, HTML and CSS.",
   pros: [
     {
       title: "Cross-platform",

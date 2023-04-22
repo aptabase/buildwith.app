@@ -4,7 +4,8 @@ export const electron: Framework = {
   slug: "electron",
   name: "Electron",
   maintainer: "OpenJS Foundation",
-  description: "Build desktop applications using JavaScript, HTML, and CSS.",
+  short_description:
+    "Build desktop applications using JavaScript, HTML, and CSS.",
   pros: [
     {
       title: "Cross-platform",

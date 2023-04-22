@@ -25,7 +25,7 @@ export function FrameworkCard(props: Props) {
         </h2>
       </div>
       <p className="relative z-10 mt-2 text-sm text-zinc-600">
-        {props.framework.description}
+        {props.framework.short_description}
       </p>
       <ul className="flex space-x-1 text-xs mt-2">
         {props.framework.languages.map((l) => (

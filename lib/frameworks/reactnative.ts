@@ -4,7 +4,7 @@ export const reactnative: Framework = {
   slug: "reactnative",
   name: "React Native",
   maintainer: "Facebook",
-  description:
+  short_description:
     "Build native mobile applications by compiling JavaScript code to native Android/iOS.",
   pros: [
     {
