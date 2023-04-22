@@ -31,7 +31,7 @@ export const electron: Framework = {
     {
       title: "Performance",
       description:
-        "Apps built with Electron may not perform as well as those built natively, especially in terms of speed and memory usage.",
+        "Apps built with Electron may not perform as well as those built natively due to the overhead introduced by the webview.",
     },
     {
       title: "App Size",
