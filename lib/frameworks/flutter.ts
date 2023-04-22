@@ -7,8 +7,8 @@ export const flutter: Framework = {
     "Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
   href: "https://flutter.dev/",
   logoUrl: "https://aptabase.com/tools/flutter.svg",
-  languages: ["dart"],
-  platforms: ["linux", "macos", "windows", "ios", "android"],
+  languages: ["Dart"],
+  platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {
     href: "https://reddit.com/r/FlutterDev/",
     members: 107_000,

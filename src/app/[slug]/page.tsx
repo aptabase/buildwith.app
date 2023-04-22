@@ -2,6 +2,7 @@
 import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
 import { frameworks, getFramework, platforms } from "@lib/frameworks";
 import Link from "next/link";
+import { InfoPanel } from "./InfoPanel";
 
 export async function generateStaticParams() {
   return frameworks.map((post) => ({
@@ -49,42 +50,11 @@ export default function Framework(props: Props) {
                     {fw.name}
                   </h1>
                 </div>
-                <p className="mt-6 text-base text-zinc-600">{fw.description}</p>
-                <ul className="mt-2 flex flex-col space-y-2">
-                  <h3>Community</h3>
-                  {fw.github && (
-                    <li>
-                      <GitHubTag {...fw.github} />
-                    </li>
-                  )}
-                  <li>
-                    <RedditTag {...fw.reddit} />
-                  </li>
-                  {(fw.discord || []).map((d) => (
-                    <li key={d.href}>
-                      <DiscordTag {...d} />
-                    </li>
-                  ))}
-                </ul>
-
-                <ul className="mt-2 flex flex-col">
-                  <h3>Supported Platforms</h3>
-                  {platforms.map((p) => (
-                    <li key={p}>
-                      <div
-                        className={`px-0.5 py-0.5 inline-flex items-center text-sm space-x-1 ${
-                          fw.platforms.includes(p)
-                            ? "bg-green-50"
-                            : "bg-zinc-50 line-through"
-                        }`}
-                      >
-                        <span>{fw.platforms.includes(p) ? "✓" : ""}</span>{" "}
-                        <span>{p}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
               </header>
+              <div className="md:flex justify-between">
+                <p className="mt-6 text-base text-zinc-600">{fw.description}</p>
+                <InfoPanel framework={fw} />
+              </div>
             </div>
           </div>
         </div>

@@ -6,8 +6,8 @@ export const apple: Framework = {
   description: "Build truly native apps for Apple devices using Swift.",
   href: "https://developer.apple.com/",
   logoUrl: "https://aptabase.com/tools/apple.svg",
-  languages: ["swift"],
-  platforms: ["ios", "tvos", "watchos", "macos"],
+  languages: ["Swift"],
+  platforms: ["iOS", "tvOS", "watchOS", "macOS"],
   reddit: {
     href: "https://reddit.com/r/iOSdev/",
     members: 125_000,

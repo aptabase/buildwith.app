@@ -7,8 +7,8 @@ export const tauri: Framework = {
     "Tauri is a framework for building optimized, secure, and frontend-independent application for multi-platform deployment.",
   href: "https://tauri.app",
   logoUrl: "https://aptabase.com/tools/tauri.svg",
-  languages: ["rust", "javascript", "typscript", "html", "css"],
-  platforms: ["linux", "macos", "windows", "ios", "android"],
+  languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
+  platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {
     href: "https://reddit.com/r/tauri/",
     members: 462,

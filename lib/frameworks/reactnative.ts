@@ -7,8 +7,8 @@ export const reactnative: Framework = {
     "React Native is a framework for building native mobile applications by compiling JavaScript code to native android/iOS app code.",
   href: "https://reactnative.dev",
   logoUrl: "https://aptabase.com/tools/react-native.svg",
-  languages: ["javascript", "typscript"],
-  platforms: ["tvos", "android_tv", "macos", "windows", "ios", "android"],
+  languages: ["JavaScript", "TypeScript"],
+  platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android"],
   reddit: {
     href: "https://reddit.com/r/reactnative/",
     members: 103_000,

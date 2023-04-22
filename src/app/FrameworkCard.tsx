@@ -30,7 +30,7 @@ export function FrameworkCard(props: Props) {
       <ul className="flex space-x-1 text-xs mt-2">
         {props.framework.languages.map((l) => (
           <li key={l} className="text-zinc-500 p-1">
-            #{l}
+            {l}
           </li>
         ))}
       </ul>

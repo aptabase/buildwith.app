@@ -7,8 +7,8 @@ export const capacitor: Framework = {
     "Capacitor is a native runtime for building Web Native apps with web technologies.",
   href: "https://capacitorjs.com",
   logoUrl: "https://aptabase.com/tools/capacitor-js.svg",
-  languages: ["javascript", "typscript", "html", "css"],
-  platforms: ["ios", "ipados", "android"],
+  languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
+  platforms: ["iOS", "Android"],
   reddit: {
     href: "https://reddit.com/r/capacitor/",
     members: 498,

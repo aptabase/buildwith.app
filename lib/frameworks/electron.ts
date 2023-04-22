@@ -7,8 +7,8 @@ export const electron: Framework = {
     "Electron is a framework for building desktop applications using JavaScript, HTML, and CSS.",
   href: "https://www.electronjs.org",
   logoUrl: "https://aptabase.com/tools/electron.svg",
-  languages: ["javascript", "typscript", "html", "css"],
-  platforms: ["linux", "macos", "windows"],
+  languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
+  platforms: ["Linux", "macOS", "Windows"],
   reddit: {
     href: "https://reddit.com/r/electronjs/",
     members: 7_400,

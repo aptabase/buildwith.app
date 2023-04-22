@@ -6,8 +6,8 @@ export const android: Framework = {
   description: "Build truly native apps for Android devices.",
   href: "https://developer.android.com/",
   logoUrl: "https://aptabase.com/tools/android.svg",
-  languages: ["java", "kotlin"],
-  platforms: ["android", "wear_os", "android_tv", "android_auto"],
+  languages: ["Java", "Kotlin"],
+  platforms: ["Android", "Wear Os", "Android TV", "Android Auto"],
   reddit: {
     href: "https://reddit.com/r/androiddev/",
     members: 211_000,
