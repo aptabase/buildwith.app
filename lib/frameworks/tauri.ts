@@ -46,7 +46,7 @@ export const tauri: Framework = {
     {
       title: "Learning Curve",
       description:
-        "Despite being popular, Rust is not easy to learn. Developers can get away building Tauri apps without knowing Rust, but eventually they will need to learn Rust to build more complex features.",
+        "Despite being popular, even for experienced developers can struggle to learn Rust. Developers can get away building Tauri apps without knowing Rust, but eventually they will need to learn Rust to build more complex features.",
     },
   ],
   href: "https://tauri.app",

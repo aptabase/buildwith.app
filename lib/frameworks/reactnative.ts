@@ -5,8 +5,30 @@ export const reactnative: Framework = {
   name: "React Native",
   description:
     "React Native is a framework for building native mobile applications by compiling JavaScript code to native android/iOS app code.",
-  pros: [],
-  cons: [],
+  pros: [
+    {
+      title: "Cross-platform",
+      description:
+        "React Native allows developers to build mobile apps for multiple platforms, including Android and iOS, using a single codebase.",
+    },
+    {
+      title: "Native APIs",
+      description:
+        "React Native provides a bridge between JavaScript and the native APIs of the operating systems. This means that developers can access native functionality such as camera, contacts, and file storage.",
+    },
+    {
+      title: "Large Community",
+      description:
+        "React Native has a very large and active developer community, which means there is plenty of documentation, tutorials, and examples available to help developers build apps.",
+    },
+  ],
+  cons: [
+    {
+      title: "Performance",
+      description:
+        "React Native's performance is not as good as that of native apps due to the overhead introduced by the bridge between JavaScript and native code.",
+    },
+  ],
   href: "https://reactnative.dev",
   logoUrl: "https://aptabase.com/tools/react-native.svg",
   languages: ["JavaScript", "TypeScript"],
