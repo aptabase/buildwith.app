@@ -31,7 +31,7 @@ export const electron: Framework = {
     {
       title: "Performance",
       description:
-        "Apps built with Electron may not perform as well as those built natively for Android or iOS, especially in terms of speed and memory usage.",
+        "Apps built with Electron may not perform as well as those built natively, especially in terms of speed and memory usage.",
     },
     {
       title: "App Size",
