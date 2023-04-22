@@ -3,8 +3,7 @@ import { Framework } from "./";
 export const capacitor: Framework = {
   slug: "capacitor",
   name: "Capacitor",
-  description:
-    "Capacitor is a native runtime for building Web Native apps with web technologies.",
+  description: "Build mobile applications using JavaScript, HTML and CSS.",
   pros: [
     {
       title: "Cross-platform",

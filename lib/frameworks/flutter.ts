@@ -4,7 +4,7 @@ export const flutter: Framework = {
   slug: "flutter",
   name: "Flutter",
   description:
-    "Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
+    "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
   pros: [
     {
       title: "Cross-platform",

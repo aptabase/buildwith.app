@@ -4,7 +4,7 @@ export const reactnative: Framework = {
   slug: "reactnative",
   name: "React Native",
   description:
-    "React Native is a framework for building native mobile applications by compiling JavaScript code to native android/iOS app code.",
+    "Build native mobile applications by compiling JavaScript code to native Android/iOS.",
   pros: [
     {
       title: "Cross-platform",

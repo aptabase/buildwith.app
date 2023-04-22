@@ -4,7 +4,7 @@ export const dotnetmaui: Framework = {
   slug: "dotnetmaui",
   name: ".NET MAUI",
   description:
-    "MAUI is a cross-platform .NET framework for building native device applications spanning mobile, tablet, and desktop.",
+    "Cross-platform .NET framework for building native mobile and desktop applications.",
   pros: [
     {
       title: "Cross-platform",

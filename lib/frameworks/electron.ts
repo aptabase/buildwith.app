@@ -3,8 +3,7 @@ import { Framework } from "./";
 export const electron: Framework = {
   slug: "electron",
   name: "Electron",
-  description:
-    "Electron is a framework for building desktop applications using JavaScript, HTML, and CSS.",
+  description: "Build desktop applications using JavaScript, HTML, and CSS.",
   pros: [
     {
       title: "Cross-platform",

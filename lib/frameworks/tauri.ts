@@ -4,7 +4,7 @@ export const tauri: Framework = {
   slug: "tauri",
   name: "Tauri",
   description:
-    "Tauri is a framework for building optimized, secure, and frontend-independent application for multi-platform deployment.",
+    "Build optimized, secure, and frontend-independent desktop and mobile applications using Web Technologies.",
   pros: [
     {
       title: "Cross-platform",
