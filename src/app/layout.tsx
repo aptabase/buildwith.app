@@ -46,6 +46,12 @@ export default function RootLayout({
           />
         </svg>
         {children}
+        <script
+          defer
+          data-domain="buildwith.app"
+          data-api="/e"
+          src="/p.js"
+        ></script>
       </body>
     </html>
   );
