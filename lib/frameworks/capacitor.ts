@@ -5,6 +5,8 @@ export const capacitor: Framework = {
   name: "Capacitor",
   description:
     "Capacitor is a native runtime for building Web Native apps with web technologies.",
+  pros: [],
+  cons: [],
   href: "https://capacitorjs.com",
   logoUrl: "https://aptabase.com/tools/capacitor-js.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],

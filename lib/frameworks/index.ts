@@ -11,6 +11,14 @@ export type Framework = {
   slug: string;
   name: string;
   description: string;
+  pros: Array<{
+    title: string;
+    description: string;
+  }>;
+  cons: Array<{
+    title: string;
+    description: string;
+  }>;
   href: string;
   logoUrl: string;
   languages: string[];

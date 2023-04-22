@@ -51,8 +51,46 @@ export default function Framework(props: Props) {
                   </h1>
                 </div>
               </header>
-              <div className="md:flex justify-between">
-                <p className="mt-6 text-base text-zinc-600">{fw.description}</p>
+              <div className="md:flex justify-between gap-8">
+                <div>
+                  <p className="mt-6 text-base text-zinc-600">
+                    {fw.description}
+                  </p>
+                  <div className="mt-8 grid md:grid-cols-2 justify-between gap-8">
+                    <ul className="space-y-2">
+                      <h3 className="flex items-center space-x-1">
+                        <span>✅</span>
+                        <span className="text-2xl">Benefits</span>
+                      </h3>
+                      {fw.pros.map((p) => (
+                        <li key={p.title}>
+                          <span className="text-base font-semibold">
+                            {p.title}
+                          </span>
+                          <p className="text-sm text-zinc-600">
+                            {p.description}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className="space-y-2">
+                      <h3 className="flex items-center space-x-1">
+                        <span>🛑</span>
+                        <span className="text-2xl">Drawbacks</span>
+                      </h3>
+                      {fw.cons.map((p) => (
+                        <li key={p.title}>
+                          <span className="text-base font-semibold">
+                            {p.title}
+                          </span>
+                          <p className="text-sm text-zinc-600">
+                            {p.description}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
                 <InfoPanel framework={fw} />
               </div>
             </div>

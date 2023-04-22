@@ -4,6 +4,8 @@ export const apple: Framework = {
   slug: "apple",
   name: "Apple (Native)",
   description: "Build truly native apps for Apple devices using Swift.",
+  pros: [],
+  cons: [],
   href: "https://developer.apple.com/",
   logoUrl: "https://aptabase.com/tools/apple.svg",
   languages: ["Swift"],

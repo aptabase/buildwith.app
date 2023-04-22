@@ -5,6 +5,8 @@ export const tauri: Framework = {
   name: "Tauri",
   description:
     "Tauri is a framework for building optimized, secure, and frontend-independent application for multi-platform deployment.",
+  pros: [],
+  cons: [],
   href: "https://tauri.app",
   logoUrl: "https://aptabase.com/tools/tauri.svg",
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],

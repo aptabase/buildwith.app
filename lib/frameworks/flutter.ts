@@ -5,6 +5,8 @@ export const flutter: Framework = {
   name: "Flutter",
   description:
     "Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
+  pros: [],
+  cons: [],
   href: "https://flutter.dev/",
   logoUrl: "https://aptabase.com/tools/flutter.svg",
   languages: ["Dart"],

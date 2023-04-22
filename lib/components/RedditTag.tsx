@@ -8,7 +8,6 @@ export function RedditTag(props: Props) {
   return (
     <a
       href={props.href}
-      rel="nofollow"
       className="inline-flex items-center space-x-2 bg-zinc-50 hover:bg-[rgba(255,69,0,0.1)] py-0.5 px-2 rounded"
     >
       <svg

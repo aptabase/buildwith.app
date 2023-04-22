@@ -26,7 +26,7 @@ export function InfoPanel(props: Props) {
       </ul>
 
       <ul className="mt-2 flex flex-col">
-        <h3>Programming Languages</h3>
+        <h3>Languages</h3>
         {props.framework.languages.map((l) => (
           <li key={l} className="py-0.5 text-sm">
             {l}
@@ -35,7 +35,7 @@ export function InfoPanel(props: Props) {
       </ul>
 
       <ul className="mt-2 flex flex-col">
-        <h3>Supported Platforms</h3>
+        <h3>Target Platforms</h3>
         {platforms.map((p) => (
           <li key={p}>
             <div
