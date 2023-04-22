@@ -51,7 +51,7 @@ export const frameworks = [
   flutter,
   reactnative,
   tauri,
-];
+].sort((a, b) => a.slug.localeCompare(b.slug));
 
 export const platforms = Array.from(
   new Set(frameworks.flatMap((framework) => framework.platforms))
