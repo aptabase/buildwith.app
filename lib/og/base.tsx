@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+// @ts-nocheck
 import { ImageResponse } from "next/server";
 
 const bg = fetch("https://buildwith.app/og-bg.jpg").then((res) =>

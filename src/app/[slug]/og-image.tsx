@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+// @ts-nocheck
+
 import { Framework } from "@lib/frameworks";
 import { GenerateOpenGraphImage } from "@lib/og/base";
 
