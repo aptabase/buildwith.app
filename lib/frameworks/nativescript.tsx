@@ -5,8 +5,24 @@ export const nativescript: Framework = {
   name: "Native Script",
   maintainer: "OpenJS Foundation",
   short_description: "Build truly native apps with JavaScript.",
+  long_description: (
+    <>
+      <p>
+        NativeScript allows developers to build native mobile applications for
+        both iOS and Android platforms using a single codebase. With
+        NativeScript, developers can use JavaScript or TypeScript to create
+        mobile apps that have access to native APIs and are capable of
+        delivering a high-performance user experience. The framework provides a
+        set of pre-built UI components that are optimized for mobile devices,
+        which allows developers to focus on building the logic of their
+        applications rather than spending time on designing the UI from scratch.
+      </p>
+      <p></p>
+      <p></p>
+    </>
+  ),
   best_for:
-    "Developers who are familiar with JavaScript and want to cross-platform mobile apps.",
+    "developers who are familiar with JavaScript and want to cross-platform mobile apps.",
   pros: [
     {
       title: "Cross-platform",

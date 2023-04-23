@@ -7,7 +7,36 @@ export const flutter: Framework = {
   short_description:
     "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
   best_for:
-    "Developers who are confortable learning a new language and want to cross-platform desktop and mobile apps.",
+    "developers who are confortable learning a new language and want to cross-platform desktop and mobile apps.",
+  long_description: (
+    <>
+      <p>
+        Flutter is designed to enable developers to build high-performance,
+        natively compiled applications for mobile, web, and desktop platforms
+        from a single codebase. Flutter uses the Dart programming language and
+        allows for reactive and declarative programming styles.
+      </p>
+      <p>
+        One of the main advantages of Flutter is its ability to provide a fast
+        development cycle, allowing developers to iterate quickly and easily.
+        This is due to the Hot Reload feature, which allows developers to see
+        changes in the code immediately, without having to restart the entire
+        application. Additionally, Flutter comes with a rich set of pre-built
+        widgets, which makes it easy for developers to create beautiful and
+        customizable user interfaces.
+      </p>
+      <p>
+        Flutter is also known for its high performance, thanks to its use of a
+        unique rendering engine called Skia. This engine is able to render
+        graphics and text quickly and efficiently, even on lower-end devices.
+        Flutter&apos;s architecture also allows it to use less memory than other
+        similar frameworks, which is particularly important for mobile devices
+        with limited resources. Overall, Flutter is a powerful and flexible
+        development tool that can help developers create high-quality,
+        cross-platform applications quickly and efficiently.
+      </p>
+    </>
+  ),
   pros: [
     {
       title: "Cross-platform",

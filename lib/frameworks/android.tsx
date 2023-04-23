@@ -22,7 +22,7 @@ export const android: Framework = {
       </p>
     </>
   ),
-  best_for: "Developers who want to build apps for the Android ecosystem.",
+  best_for: "developers who want to build apps for the Android ecosystem.",
   pros: [
     {
       title: "Official SDK",

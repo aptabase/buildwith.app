@@ -6,8 +6,36 @@ export const reactnative: Framework = {
   maintainer: "Facebook",
   short_description:
     "Build native mobile applications by compiling JavaScript code to native Android/iOS.",
+  long_description: (
+    <>
+      <p>
+        React Native enables developers to build natively compiled applications
+        for mobile platforms, including iOS and Android, using a single codebase
+        written in JavaScript. React Native uses the same design as React, a
+        popular web development library, which allows developers to create
+        reusable and modular code.
+      </p>
+      <p>
+        One of the key benefits of React Native is its ability to provide a fast
+        development cycle due to Hot Reload, which allows developers to see
+        changes in their code immediately, without having to recompile the
+        entire application. Additionally, React Native comes with a large
+        library of pre-built components, making it easy for developers to create
+        responsive and customizable user interfaces.
+      </p>
+      <p>
+        React Native&apos;s performance is also noteworthy. It uses native
+        components, which allows it to provide a high level of performance and
+        speed, even on older devices. However, because it uses JavaScript, it
+        may not be as performant as natively coded applications in some cases.
+        Overall, React Native is a powerful and flexible tool that can help
+        developers build high-quality, cross-platform applications for mobile
+        platforms.
+      </p>
+    </>
+  ),
   best_for:
-    "Developers who are familiar with JavaScript and want to cross-platform mobile apps.",
+    "developers who are familiar with JavaScript and want to cross-platform mobile apps.",
   pros: [
     {
       title: "Cross-platform",

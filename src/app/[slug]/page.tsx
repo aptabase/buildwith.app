@@ -73,7 +73,7 @@ export default function Framework(props: Props) {
                     <span className="font-semibold">
                       {fw.name} is best for{" "}
                     </span>
-                    {fw.best_for.toLowerCase()}
+                    {fw.best_for}
                   </p>
                   <ProsCons framework={fw} />
                 </div>

@@ -6,8 +6,37 @@ export const dotnetmaui: Framework = {
   maintainer: "Microsoft",
   short_description:
     "Cross-platform .NET framework for building native mobile and desktop applications.",
+  long_description: (
+    <>
+      <p>
+        .NET Multi-platform App UI (MAUI) allows developers to build native
+        mobile and desktop applications for Android, iOS, macOS, Windows, and
+        Linux using a single codebase written in C# and XAML. .NET MAUI is a
+        continuation of Xamarin.Forms and is designed to provide a consistent
+        and modern development experience for building cross-platform
+        applications.
+      </p>
+      <p>
+        One of the key benefits of .NET MAUI is its native support for multiple
+        platforms. It provides a set of pre-built UI components that are
+        optimized for each platform, allowing developers to create applications
+        that look and feel native on each platform. .NET MAUI also provides
+        access to native device features and functionality through a unified
+        API, making it easy for developers to create cross-platform applications
+        without sacrificing performance or functionality.
+      </p>
+      <p>
+        Another benefit of .NET MAUI is its use of modern development patterns
+        and practices. It uses XAML for building user interfaces, which is a
+        markup language that is easy to read and write, and supports data
+        binding and styling. .NET MAUI also uses MVVM (Model-View-ViewModel)
+        architecture, which helps to separate the UI logic from the application
+        logic, making it easier to test and maintain.
+      </p>
+    </>
+  ),
   best_for:
-    "Developers who are familiar with C#/.NET and want to build cross-platform mobile and desktop apps.",
+    "developers who are familiar with C#/.NET and want to build cross-platform mobile and desktop apps.",
   pros: [
     {
       title: "Cross-platform",

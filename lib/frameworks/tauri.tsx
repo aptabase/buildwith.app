@@ -24,7 +24,7 @@ export const tauri: Framework = {
     </>
   ),
   best_for:
-    "Developers who are familiar with web technologies and want to build cross-platform mobile and desktop apps.",
+    "developers who are familiar with web technologies and want to build cross-platform mobile and desktop apps.",
   pros: [
     {
       title: "Cross-platform",

@@ -6,8 +6,32 @@ export const capacitor: Framework = {
   maintainer: "Ionic",
   short_description:
     "Build mobile applications using JavaScript, HTML and CSS.",
+  long_description: (
+    <>
+      <p>
+        Capacitor allows developers to build high-quality mobile applications
+        for iOS, Android, and the web using a single codebase written in web
+        technologies such as HTML, CSS, and JavaScript. Capacitor uses modern
+        web standards and APIs to provide access to native device features and
+        functionality.
+      </p>
+      <p>
+        One of the main advantages of Capacitor is its ease of use. It is built
+        on top of modern web technologies, which makes it easy for developers to
+        transition from web development to mobile development. Capacitor also
+        has a simple and intuitive API that provides developers with access to a
+        wide range of native device features, such as geolocation, camera, and
+        notifications.
+      </p>
+      <p>
+        Overall, Capacitor is a powerful and flexible tool that can help
+        developers create high-quality mobile applications for multiple
+        platforms quickly and easily.
+      </p>
+    </>
+  ),
   best_for:
-    "Developers who are familiar with web technologies and want to cross-platform mobile apps.",
+    "developers who are familiar with web technologies and want to cross-platform mobile apps.",
   pros: [
     {
       title: "Cross-platform",

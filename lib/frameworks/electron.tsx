@@ -6,8 +6,35 @@ export const electron: Framework = {
   maintainer: "OpenJS Foundation",
   short_description:
     "Build desktop applications using JavaScript, HTML, and CSS.",
+  long_description: (
+    <>
+      <p>
+        Electron is a popular open-source framework that allows developers to
+        build desktop applications using web technologies such as HTML, CSS, and
+        JavaScript. Electron was initially developed by GitHub and is based on
+        Node.js and Chromium, which enables developers to create cross-platform
+        desktop applications for Windows, macOS, and Linux using a single
+        codebase.
+      </p>
+      <p>
+        One of the benefits of Electron is that it provides a familiar
+        development environment for web developers, who can use their existing
+        skills to create desktop applications. Electron also provides access to
+        many web technologies and libraries, which can be leveraged to create
+        rich and interactive desktop user interfaces.
+      </p>
+      <p>
+        Electron provides a range of tools and APIs that make it easy for
+        developers to build powerful desktop applications, including system
+        integrations, native dialog boxes, and file system access. However,
+        performance may become an issue for some applications due to
+        single-threaded Node.js and the use of a webview to render the
+        interface.
+      </p>
+    </>
+  ),
   best_for:
-    "Developers who are familiar with web technologies and want to cross-platform desktop apps.",
+    "developers who are familiar with web technologies and want to cross-platform desktop apps.",
   pros: [
     {
       title: "Cross-platform",

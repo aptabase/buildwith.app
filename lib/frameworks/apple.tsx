@@ -22,7 +22,7 @@ export const apple: Framework = {
       </p>
     </>
   ),
-  best_for: "Developers who want to build apps for Apple devices.",
+  best_for: "developers who want to build apps for Apple devices.",
   pros: [
     {
       title: "Official SDK",
