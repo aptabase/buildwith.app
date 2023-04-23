@@ -4,15 +4,15 @@ import Image from "next/image";
 import iphone from "./iphone.png";
 
 export const metadata = {
-  title: "The framework for you next app - BuildWith.app",
+  title: "Build your next app with...",
   description: "Find and compare the best framework for your next app",
   openGraph: {
-    title: "The framework for you next app - BuildWith.app",
+    title: "Build your next app with...",
     description: "Find and compare the best framework for your next app",
     url: `https://buildwith.app`,
   },
   twitter: {
-    title: "The framework for you next app - BuildWith.app",
+    title: "Build your next app with...",
     description: "Find and compare the best framework for your next app",
     url: `https://buildwith.app`,
   },
