@@ -3,6 +3,7 @@ import { frameworks, getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { InfoPanel } from "./InfoPanel";
 import { ProsCons } from "./ProsCons";
+import { Metadata, MetadataRoute, ResolvedMetadata } from "next";
 
 export async function generateStaticParams() {
   return frameworks.map((post) => ({
@@ -19,6 +20,16 @@ export async function generateMetadata(props: Props) {
   return {
     title: `${fw.name} - BuildWith.app`,
     description: `${fw.name}: ${fw.short_description}`,
+    openGraph: {
+      title: `${fw.name} - BuildWith.app`,
+      description: `${fw.name}: ${fw.short_description}`,
+      url: `https://buildwith.app/${fw.slug}`,
+    },
+    twitter: {
+      title: `${fw.name} - BuildWith.app`,
+      description: `${fw.name}: ${fw.short_description}`,
+      url: `https://buildwith.app/${fw.slug}`,
+    },
   };
 }
 
