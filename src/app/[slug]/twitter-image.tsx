@@ -7,5 +7,5 @@ type Props = {
 
 export default async function handler(props: Props) {
   const fw = getFramework(props.params.slug);
-  return await GenerateImage(fw, 1200, 630);
+  return await GenerateImage(fw, 1200, 600);
 }
