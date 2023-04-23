@@ -35,7 +35,6 @@ export const nativescript: Framework = {
     first: "April 29, 2015",
   },
   href: "https://nativescript.org/",
-  logo_url: "https://aptabase.com/tools/nativescript.svg",
   languages: ["JavaScript", "TypeScript"],
   platforms: ["iOS", "Android"],
   reddit: {

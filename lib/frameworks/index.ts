@@ -27,7 +27,6 @@ export type Framework = {
     description: string;
   }>;
   href: string;
-  logo_url: string;
   languages: string[];
   platforms: string[];
   reddit: {

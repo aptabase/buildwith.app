@@ -51,7 +51,6 @@ export const electron: Framework = {
     first: "15 July 2013",
   },
   href: "https://www.electronjs.org",
-  logo_url: "https://aptabase.com/tools/electron.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows"],
   reddit: {

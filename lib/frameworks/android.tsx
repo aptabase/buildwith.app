@@ -66,7 +66,6 @@ export const android: Framework = {
     first: "September 23, 2008",
   },
   href: "https://developer.android.com/",
-  logo_url: "https://aptabase.com/tools/android.svg",
   languages: ["Java", "Kotlin"],
   platforms: ["Android", "Wear Os", "Android TV", "Android Auto"],
   reddit: {

@@ -61,7 +61,6 @@ export const apple: Framework = {
     first: "March 6, 2008",
   },
   href: "https://developer.apple.com/",
-  logo_url: "https://aptabase.com/tools/apple.svg",
   languages: ["Swift"],
   platforms: ["iOS", "tvOS", "watchOS", "macOS"],
   reddit: {

@@ -36,7 +36,6 @@ export const reactnative: Framework = {
     first: "March 26, 2015",
   },
   href: "https://reactnative.dev",
-  logo_url: "https://aptabase.com/tools/react-native.svg",
   languages: ["JavaScript", "TypeScript"],
   platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android"],
   reddit: {

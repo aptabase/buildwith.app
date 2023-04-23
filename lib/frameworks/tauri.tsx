@@ -73,7 +73,6 @@ export const tauri: Framework = {
     first: "June 19, 2022",
   },
   href: "https://tauri.app",
-  logo_url: "https://aptabase.com/tools/tauri.svg",
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {

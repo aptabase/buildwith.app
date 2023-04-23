@@ -36,7 +36,6 @@ export const dotnetmaui: Framework = {
     first: "May 23, 2022",
   },
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
-  logo_url: "https://aptabase.com/tools/dotnet.png",
   platforms: ["iOS", "Android", "macOS", "Windows"],
   languages: ["C#"],
   reddit: {

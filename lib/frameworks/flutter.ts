@@ -51,7 +51,6 @@ export const flutter: Framework = {
     first: "May 12, 2017",
   },
   href: "https://flutter.dev/",
-  logo_url: "https://aptabase.com/tools/flutter.svg",
   languages: ["Dart"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {

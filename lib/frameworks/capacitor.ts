@@ -46,7 +46,6 @@ export const capacitor: Framework = {
     first: "May 22, 2019",
   },
   href: "https://capacitorjs.com",
-  logo_url: "https://aptabase.com/tools/capacitor-js.svg",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["iOS", "Android"],
   reddit: {

@@ -12,7 +12,6 @@ export async function generateStaticParams() {
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata(props: Props) {
@@ -44,7 +43,7 @@ export default function Framework(props: Props) {
                     loading="lazy"
                     decoding="async"
                     className="h-12 w-12 rounded"
-                    src={fw.logo_url}
+                    src={`/frameworks/${fw.slug}.svg`}
                   />
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
                     {fw.name}
