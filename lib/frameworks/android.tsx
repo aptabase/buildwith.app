@@ -5,6 +5,23 @@ export const android: Framework = {
   name: "Android (Native)",
   maintainer: "Google",
   short_description: "Build truly native apps for Android devices.",
+  long_description: (
+    <>
+      <p>
+        Using Android Studio and Kotlin is how Google wants you to build apps
+        for their the Android ecosystem. You&apos;ll always get the best
+        performance and compatibility when going all in on native development.
+        There&apos;s a huge community building native apps with Kotlin and
+        it&apos;s fairly easy to find courses and free content online.
+      </p>
+      <p>
+        By building native apps, you&apos;ll have access to the latest features
+        and functionality of the Android ecosystem. You&apos;ll also be able to
+        build apps for all Android-based operating systems, including Android
+        TV, Android Auto, Wear OS, and of course, Smartphones.
+      </p>
+    </>
+  ),
   best_for: "Developers who want to build apps for the Android ecosystem.",
   pros: [
     {

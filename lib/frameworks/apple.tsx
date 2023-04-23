@@ -4,7 +4,24 @@ export const apple: Framework = {
   slug: "apple",
   name: "Apple (Native)",
   maintainer: "Apple",
-  short_description: "Build truly native apps for Apple devices using Swift.",
+  short_description: "Build truly native apps for Apple devices.",
+  long_description: (
+    <>
+      <p>
+        Using Swift and SwiftUI is how Apple wants you to build apps for their
+        devices. You&apos;ll always get the best performance and compatibility
+        when going all in on native development. There&apos;s a huge community
+        building apps with Swift and it&apos;s fairly easy to find courses and
+        free content online.
+      </p>
+      <p>
+        By building native apps, you&apos;ll have access to the latest features
+        and functionality of the Apple ecosystem. You&apos;ll also be able to
+        build apps for all Apple devices, including Apple Watch, Apple TV, Mac,
+        iPad and iPhone.
+      </p>
+    </>
+  ),
   best_for: "Developers who want to build apps for Apple devices.",
   pros: [
     {

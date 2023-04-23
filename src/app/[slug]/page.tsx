@@ -53,7 +53,7 @@ export default function Framework(props: Props) {
               </header>
               <div className="md:flex justify-between gap-8">
                 <div>
-                  <div className="mt-6 prose-lg">
+                  <div className="mt-6 prose max-w-none">
                     {fw.long_description || fw.short_description}
                   </div>
                   <p className="mt-6">

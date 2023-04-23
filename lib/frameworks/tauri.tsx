@@ -13,21 +13,13 @@ export const tauri: Framework = {
         technologies. It uses a combination of Rust for the backend and a
         webview for the frontend to build cross-platform apps that are small,
         secure, and performant. Tauri is a relatively new framework, but
-        it&apos;s quickly gaining popularity.
+        it&apos;s quickly gaining popularity. You might struggle to find content
+        online, but the Discord community is very active and helpful.
       </p>
       <p>
-        A key difference between Tauri and Electron is that Tauri uses the
-        system&apos;s webview:
-      </p>
-      <ul>
-        <li>WebView2 on Windows</li>
-        <li>WebKit on macOS</li>
-        <li>WebKitGTK on Linux</li>
-      </ul>
-      <p>
-        Because of this, apps built with Tauri are much smaller than apps built
-        with Electron. Tauri also uses Rust for the backend, which means that
-        apps built with Tauri can be very performant.
+        Tauri uses the system&apos;s webview component during runtime instead of
+        bundling Chromium and Node.js. Because of this, apps built with Tauri
+        are very small.
       </p>
     </>
   ),
