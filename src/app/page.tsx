@@ -5,8 +5,17 @@ import iphone from "./iphone.png";
 
 export const metadata = {
   title: "The framework for you next app - BuildWith.app",
-  description:
-    "Compare and find the best framework for your next mobile or desktop app",
+  description: "Find and compare the best framework for your next app",
+  openGraph: {
+    title: "The framework for you next app - BuildWith.app",
+    description: "Find and compare the best framework for your next app",
+    url: `https://buildwith.app`,
+  },
+  twitter: {
+    title: "The framework for you next app - BuildWith.app",
+    description: "Find and compare the best framework for your next app",
+    url: `https://buildwith.app`,
+  },
 };
 
 export default function Home() {
