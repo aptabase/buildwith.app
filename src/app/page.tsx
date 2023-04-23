@@ -14,6 +14,7 @@ export const metadata = {
   },
   twitter: {
     title: "Build your next app with...",
+    card: "summary_large_image",
     description: "Find and compare the best framework for your next app",
     url: `https://buildwith.app`,
     images: ["https://buildwith.app/twitter.png"],

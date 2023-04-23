@@ -24,11 +24,14 @@ export async function generateMetadata(props: Props) {
       title: `${fw.name} - BuildWith.app`,
       description: `${fw.name}: ${fw.short_description}`,
       url: `https://buildwith.app/${fw.slug}`,
+      images: ["https://buildwith.app/og.png"],
     },
     twitter: {
       title: `${fw.name} - BuildWith.app`,
       description: `${fw.name}: ${fw.short_description}`,
+      card: "summary_large_image",
       url: `https://buildwith.app/${fw.slug}`,
+      images: ["https://buildwith.app/twitter.png"],
     },
   };
 }
