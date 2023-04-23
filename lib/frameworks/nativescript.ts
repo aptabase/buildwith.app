@@ -28,7 +28,7 @@ export const nativescript: Framework = {
     {
       title: "Emerging Community",
       description:
-        "Despite being around for a while, the Native Script is not as popular as other frameworks, which means that there is not a lot of documentation, tutorials, and examples available to help developers apps.",
+        "Despite being around for a while, the Native Script is not as popular as other frameworks, which means that there is not a lot of tutorials, and examples available to help developers apps.",
     },
   ],
   releases: {

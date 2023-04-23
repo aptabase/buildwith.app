@@ -39,7 +39,7 @@ export const capacitor: Framework = {
     {
       title: "Emerging Community",
       description:
-        "Capacitor is a relatively new framework, which means that there is not a lot of documentation, tutorials, and examples available to help developers apps.",
+        "Capacitor is a relatively new framework, which means that there is not a lot of tutorials, and examples available to help developers apps.",
     },
   ],
   releases: {

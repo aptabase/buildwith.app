@@ -22,9 +22,9 @@ export const dotnetmaui: Framework = {
   ],
   cons: [
     {
-      title: "Small Community",
+      title: "Emerging Community",
       description:
-        ".NET MAUI is a relatively new framework, which means that there is not a lot of documentation, tutorials, and examples available to help developers apps.",
+        ".NET MAUI is a relatively new framework, which means that there is not a lot of tutorials, and examples available to help developers apps.",
     },
     {
       title: "Learning Curve",
