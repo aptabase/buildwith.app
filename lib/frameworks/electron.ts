@@ -7,7 +7,8 @@ export const electron: Framework = {
   short_description:
     "Build desktop applications using JavaScript, HTML, and CSS.",
   long_description: "",
-  best_for: "",
+  best_for:
+    "Developers who are familiar with web technologies and want to cross-platform desktop apps.",
   pros: [
     {
       title: "Cross-platform",

@@ -7,7 +7,8 @@ export const dotnetmaui: Framework = {
   short_description:
     "Cross-platform .NET framework for building native mobile and desktop applications.",
   long_description: "",
-  best_for: "",
+  best_for:
+    "Developers who are familiar with C#/.NET and want to build cross-platform mobile and desktop apps.",
   pros: [
     {
       title: "Cross-platform",

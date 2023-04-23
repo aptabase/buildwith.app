@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
-import { frameworks, getFramework, platforms } from "@lib/frameworks";
+import { frameworks, getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { InfoPanel } from "./InfoPanel";
+import { ProsCons } from "./ProsCons";
 
 export async function generateStaticParams() {
   return frameworks.map((post) => ({
@@ -53,43 +53,16 @@ export default function Framework(props: Props) {
               </header>
               <div className="md:flex justify-between gap-8">
                 <div>
-                  <p className="mt-6 text-base text-zinc-600">
-                    {fw.short_description}
+                  <p className="mt-6 text-base">
+                    {fw.long_description || fw.short_description}
                   </p>
-                  <div className="mt-8 grid md:grid-cols-2 justify-between gap-8">
-                    <ul className="space-y-2">
-                      <h3 className="flex items-center space-x-1">
-                        <span>✅</span>
-                        <span className="text-2xl">Strengths</span>
-                      </h3>
-                      {fw.pros.map((p) => (
-                        <li key={p.title}>
-                          <span className="text-base font-semibold">
-                            {p.title}
-                          </span>
-                          <p className="text-sm text-zinc-600">
-                            {p.description}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                    <ul className="space-y-2">
-                      <h3 className="flex items-center space-x-1">
-                        <span>🛑</span>
-                        <span className="text-2xl">Weaknesses</span>
-                      </h3>
-                      {fw.cons.map((p) => (
-                        <li key={p.title}>
-                          <span className="text-base font-semibold">
-                            {p.title}
-                          </span>
-                          <p className="text-sm text-zinc-600">
-                            {p.description}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <p className="mt-6">
+                    <span className="font-semibold">
+                      {fw.name} is best for{" "}
+                    </span>
+                    {fw.best_for.toLowerCase()}
+                  </p>
+                  <ProsCons framework={fw} />
                 </div>
                 <InfoPanel framework={fw} />
               </div>

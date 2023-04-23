@@ -7,7 +7,8 @@ export const flutter: Framework = {
   short_description:
     "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
   long_description: "",
-  best_for: "",
+  best_for:
+    "Developers who are confortable learning a new language and want to cross-platform desktop and mobile apps.",
   pros: [
     {
       title: "Cross-platform",

@@ -7,7 +7,8 @@ export const tauri: Framework = {
   short_description:
     "Build optimized, secure, and frontend-independent desktop and mobile applications using Web Technologies.",
   long_description: "",
-  best_for: "",
+  best_for:
+    "Developers who are familiar with web technologies and want to build cross-platform mobile and desktop apps.",
   pros: [
     {
       title: "Cross-platform",
