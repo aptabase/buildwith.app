@@ -13,7 +13,7 @@ export type Framework = {
   name: string;
   maintainer: string;
   short_description: string;
-  long_description: string;
+  long_description?: JSX.Element;
   best_for: string;
   releases: {
     first: string;

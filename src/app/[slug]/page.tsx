@@ -53,9 +53,9 @@ export default function Framework(props: Props) {
               </header>
               <div className="md:flex justify-between gap-8">
                 <div>
-                  <p className="mt-6 text-base">
+                  <div className="mt-6 prose-lg">
                     {fw.long_description || fw.short_description}
-                  </p>
+                  </div>
                   <p className="mt-6">
                     <span className="font-semibold">
                       {fw.name} is best for{" "}

@@ -5,7 +5,6 @@ export const android: Framework = {
   name: "Android (Native)",
   maintainer: "Google",
   short_description: "Build truly native apps for Android devices.",
-  long_description: "",
   best_for: "Developers who want to build apps for the Android ecosystem.",
   pros: [
     {

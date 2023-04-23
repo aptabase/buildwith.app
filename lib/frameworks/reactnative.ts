@@ -6,7 +6,6 @@ export const reactnative: Framework = {
   maintainer: "Facebook",
   short_description:
     "Build native mobile applications by compiling JavaScript code to native Android/iOS.",
-  long_description: "",
   best_for:
     "Developers who are familiar with JavaScript and want to cross-platform mobile apps.",
   pros: [

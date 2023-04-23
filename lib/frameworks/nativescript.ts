@@ -5,7 +5,6 @@ export const nativescript: Framework = {
   name: "Native Script",
   maintainer: "OpenJS Foundation",
   short_description: "Build truly native apps with JavaScript.",
-  long_description: "",
   best_for:
     "Developers who are familiar with JavaScript and want to cross-platform mobile apps.",
   pros: [

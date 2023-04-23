@@ -6,7 +6,6 @@ export const capacitor: Framework = {
   maintainer: "Ionic",
   short_description:
     "Build mobile applications using JavaScript, HTML and CSS.",
-  long_description: "",
   best_for:
     "Developers who are familiar with web technologies and want to cross-platform mobile apps.",
   pros: [
