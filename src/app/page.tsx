@@ -10,11 +10,13 @@ export const metadata = {
     title: "Build your next app with...",
     description: "Find and compare the best framework for your next app",
     url: `https://buildwith.app`,
+    images: ["/og.png"],
   },
   twitter: {
     title: "Build your next app with...",
     description: "Find and compare the best framework for your next app",
     url: `https://buildwith.app`,
+    images: ["/twitter.png"],
   },
 };
 
@@ -43,7 +45,7 @@ export default function Home() {
                 />
               </div>
               <div className="mt-16 sm:mt-20">
-                <div className="grid grid-cols-1 gap-x-12 gap-y-4 sm:gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-x-4 gap-y-4 sm:gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
                   {frameworks.map((framework) => (
                     <FrameworkCard key={framework.slug} framework={framework} />
                   ))}
