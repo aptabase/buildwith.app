@@ -56,7 +56,7 @@ export const flutter: Framework = {
     {
       title: "Native APIs",
       description:
-        "Flutter provides a bridge between the to native APIs. This means that developers can access native functionality like the camera, accelerometer and much more.",
+        "Flutter provides a bridge between to native APIs. This means that developers can access native functionality like the camera, accelerometer and much more.",
     },
     {
       title: "Large Community",
