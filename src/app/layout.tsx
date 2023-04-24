@@ -2,6 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "cal-sans";
+import { Footer } from "@lib/components";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
           />
         </svg>
         {children}
+        <Footer />
         <script
           defer
           data-domain="buildwith.app"
