@@ -87,11 +87,9 @@ export const tauri: Framework = {
     slug: "TauriApps",
     followers: 9_600,
   },
-  discord: [
-    {
-      name: "Tauri Apps",
-      href: "https://discord.com/invite/tauri",
-      members: 9_958,
-    },
-  ],
+  discord: {
+    name: "Tauri Apps",
+    href: "https://discord.com/invite/tauri",
+    members: 9_958,
+  },
 };

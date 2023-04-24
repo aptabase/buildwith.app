@@ -76,11 +76,9 @@ export const android: Framework = {
     slug: "AndroidDev",
     followers: 2_200_000,
   },
-  discord: [
-    {
-      name: "/r/AndroidDev",
-      href: "https://discord.com/invite/D2cNrqX",
-      members: 23_805,
-    },
-  ],
+  discord: {
+    name: "/r/AndroidDev",
+    href: "https://discord.com/invite/D2cNrqX",
+    members: 23_805,
+  },
 };

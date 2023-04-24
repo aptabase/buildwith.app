@@ -92,11 +92,9 @@ export const electron: Framework = {
     slug: "electronjs",
     followers: 36_300,
   },
-  discord: [
-    {
-      name: "electronjs.org",
-      href: "https://discord.com/invite/electronjs",
-      members: 14_391,
-    },
-  ],
+  discord: {
+    name: "electronjs.org",
+    href: "https://discord.com/invite/electronjs",
+    members: 14_391,
+  },
 };

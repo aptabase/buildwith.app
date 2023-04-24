@@ -71,21 +71,9 @@ export const apple: Framework = {
     slug: "AndroidDev",
     followers: 2_200_000,
   },
-  discord: [
-    {
-      name: "Swift",
-      href: "https://discord.com/invite/0uZpB8GgRvoU12Ta",
-      members: 6_632,
-    },
-    {
-      name: "iOS Development",
-      href: "https://discord.com/invite/vVNXQZT",
-      members: 7_308,
-    },
-    {
-      name: "The Swift Den",
-      href: "https://discord.com/invite/hzDzBcP2Xv",
-      members: 860,
-    },
-  ],
+  discord: {
+    name: "iOS Development",
+    href: "https://discord.com/invite/vVNXQZT",
+    members: 7_308,
+  },
 };

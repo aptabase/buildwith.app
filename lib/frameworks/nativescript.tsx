@@ -65,11 +65,9 @@ export const nativescript: Framework = {
     slug: "nativescript",
     followers: 70_700,
   },
-  discord: [
-    {
-      name: "Native Script",
-      href: "https://discord.com/invite/RgmpGky9GR",
-      members: 4_246,
-    },
-  ],
+  discord: {
+    name: "Native Script",
+    href: "https://discord.com/invite/RgmpGky9GR",
+    members: 4_246,
+  },
 };

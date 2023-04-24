@@ -23,7 +23,12 @@ export function RedditTag(props: Props) {
           ></path>
         </g>
       </svg>
-      <span>{sub}</span>
+      <span>
+        {props.members > 1000
+          ? `${Math.floor(props.members) / 1000}k`
+          : `${props.members}`}{" "}
+        members
+      </span>
     </a>
   );
 }

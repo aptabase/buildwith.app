@@ -41,11 +41,11 @@ export type Framework = {
     slug: string;
     followers: number;
   };
-  discord: Array<{
+  discord: {
     name: string;
     href: string;
     members: number;
-  }>;
+  };
 };
 
 export const frameworks = [

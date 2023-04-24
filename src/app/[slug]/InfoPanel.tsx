@@ -30,11 +30,9 @@ export function InfoPanel(props: Props) {
         <li>
           <RedditTag {...props.framework.reddit} />
         </li>
-        {(props.framework.discord || []).map((d) => (
-          <li key={d.href}>
-            <DiscordTag {...d} />
-          </li>
-        ))}
+        <li>
+          <DiscordTag {...props.framework.discord} />
+        </li>
       </ul>
 
       <ul className="mt-2 flex flex-col">

@@ -82,11 +82,9 @@ const Community = ({ fw }: { fw: Framework }) => (
     <li>
       <RedditTag {...fw.reddit} />
     </li>
-    {(fw.discord || []).map((d) => (
-      <li key={d.href}>
-        <DiscordTag {...d} />
-      </li>
-    ))}
+    <li>
+      <DiscordTag {...fw.discord} />
+    </li>
   </ul>
 );
 

@@ -94,11 +94,9 @@ export const flutter: Framework = {
     slug: "FlutterDev",
     followers: 229_600,
   },
-  discord: [
-    {
-      name: "/r/FlutterDev",
-      href: "https://discord.com/invite/N7Yshp4",
-      members: 52_853,
-    },
-  ],
+  discord: {
+    name: "/r/FlutterDev",
+    href: "https://discord.com/invite/N7Yshp4",
+    members: 52_853,
+  },
 };
