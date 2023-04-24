@@ -73,7 +73,7 @@ export const capacitor: Framework = {
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["iOS", "Android"],
   reddit: {
-    href: "https://reddit.com/r/capacitor/",
+    href: "https://reddit.com/r/capacitor",
     members: 498,
   },
   github: {

@@ -81,7 +81,7 @@ export const electron: Framework = {
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows"],
   reddit: {
-    href: "https://reddit.com/r/electronjs/",
+    href: "https://reddit.com/r/electronjs",
     members: 7_400,
   },
   github: {

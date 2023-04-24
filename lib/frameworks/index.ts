@@ -64,10 +64,6 @@ export const platforms = Array.from(
   new Set(frameworks.flatMap((framework) => framework.platforms))
 ).sort((a, b) => a.localeCompare(b));
 
-export function getFramework(slug: string): Framework {
-  const fw = frameworks.find((framework) => framework.slug === slug);
-  if (!fw) {
-    throw new Error(`Framework ${slug} not found`);
-  }
-  return fw;
+export function getFramework(slug: string): Framework | undefined {
+  return frameworks.find((framework) => framework.slug === slug);
 }

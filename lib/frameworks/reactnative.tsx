@@ -67,7 +67,7 @@ export const reactnative: Framework = {
   languages: ["JavaScript", "TypeScript"],
   platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android"],
   reddit: {
-    href: "https://reddit.com/r/reactnative/",
+    href: "https://reddit.com/r/reactnative",
     members: 103_000,
   },
   github: {

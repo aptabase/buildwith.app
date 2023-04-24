@@ -76,7 +76,7 @@ export const tauri: Framework = {
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {
-    href: "https://reddit.com/r/tauri/",
+    href: "https://reddit.com/r/tauri",
     members: 462,
   },
   github: {

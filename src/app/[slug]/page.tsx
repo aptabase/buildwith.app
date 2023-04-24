@@ -3,7 +3,7 @@ import { frameworks, getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { InfoPanel } from "./InfoPanel";
 import { ProsCons } from "./ProsCons";
-import { Metadata, MetadataRoute, ResolvedMetadata } from "next";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   return frameworks.map((post) => ({
@@ -17,6 +17,8 @@ type Props = {
 
 export async function generateMetadata(props: Props) {
   const fw = getFramework(props.params.slug);
+  if (!fw) return;
+
   return {
     title: `${fw.name} - BuildWith.app`,
     description: `${fw.name}: ${fw.short_description}`,
@@ -38,6 +40,8 @@ export async function generateMetadata(props: Props) {
 
 export default function Framework(props: Props) {
   const fw = getFramework(props.params.slug);
+  if (!fw) return notFound();
+
   return (
     <main>
       <div className="sm:px-8 mt-16 sm:mt-32">

@@ -83,7 +83,7 @@ export const flutter: Framework = {
   languages: ["Dart"],
   platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
   reddit: {
-    href: "https://reddit.com/r/FlutterDev/",
+    href: "https://reddit.com/r/FlutterDev",
     members: 107_000,
   },
   github: {

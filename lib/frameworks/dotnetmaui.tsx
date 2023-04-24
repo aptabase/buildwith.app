@@ -68,7 +68,7 @@ export const dotnetmaui: Framework = {
   platforms: ["iOS", "Android", "macOS", "Windows"],
   languages: ["C#"],
   reddit: {
-    href: "https://reddit.com/r/dotnetMAUI/",
+    href: "https://reddit.com/r/dotnetMAUI",
     members: 3_100,
   },
   github: {

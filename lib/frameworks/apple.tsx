@@ -64,7 +64,7 @@ export const apple: Framework = {
   languages: ["Swift"],
   platforms: ["iOS", "tvOS", "watchOS", "macOS"],
   reddit: {
-    href: "https://reddit.com/r/iOSdev/",
+    href: "https://reddit.com/r/iOSdev",
     members: 125_000,
   },
   twitter: {

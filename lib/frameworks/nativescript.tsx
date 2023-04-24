@@ -54,7 +54,7 @@ export const nativescript: Framework = {
   languages: ["JavaScript", "TypeScript"],
   platforms: ["iOS", "Android"],
   reddit: {
-    href: "https://reddit.com/r/nativescript/",
+    href: "https://reddit.com/r/nativescript",
     members: 2_000,
   },
   github: {

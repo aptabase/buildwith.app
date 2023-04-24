@@ -69,7 +69,7 @@ export const android: Framework = {
   languages: ["Java", "Kotlin"],
   platforms: ["Android", "Wear Os", "Android TV", "Android Auto"],
   reddit: {
-    href: "https://reddit.com/r/androiddev/",
+    href: "https://reddit.com/r/androiddev",
     members: 211_000,
   },
   twitter: {
