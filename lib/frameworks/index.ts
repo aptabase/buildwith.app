@@ -60,6 +60,14 @@ export const frameworks = [
   tauri,
 ].sort((a, b) => a.slug.localeCompare(b.slug));
 
+export const comparisons = frameworks.reduce((acc, curr) => {
+  const others = frameworks.filter(
+    (fw) => fw.slug.localeCompare(curr.slug) > 0
+  );
+  const rows = others.map((fw) => `${curr.slug}-vs-${fw.slug}`);
+  return [...acc, ...rows];
+}, [] as string[]);
+
 export const platforms = Array.from(
   new Set(frameworks.flatMap((framework) => framework.platforms))
 ).sort((a, b) => a.localeCompare(b));

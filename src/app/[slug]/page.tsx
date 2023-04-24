@@ -4,6 +4,7 @@ import Link from "next/link";
 import { InfoPanel } from "./InfoPanel";
 import { ProsCons } from "./ProsCons";
 import { notFound } from "next/navigation";
+import { CompareWith } from "./CompareWith";
 
 export async function generateStaticParams() {
   return frameworks.map((post) => ({
@@ -82,6 +83,16 @@ export default function Framework(props: Props) {
                   <ProsCons framework={fw} />
                 </div>
                 <InfoPanel framework={fw} />
+              </div>
+              <div className="mt-10 max-w-xl">
+                <h3>Compare {fw.name} with</h3>
+                <div className="grid grid-cols-3 gap-4 py-4">
+                  {frameworks
+                    .filter((f) => f != fw)
+                    .map((fw2) => (
+                      <CompareWith key={fw2.slug} fw1={fw} fw2={fw2} />
+                    ))}
+                </div>
               </div>
             </div>
           </div>

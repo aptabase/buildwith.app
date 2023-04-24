@@ -2,6 +2,7 @@
 import { GitHubTag, RedditTag, DiscordTag } from "@lib/components";
 import {
   Framework,
+  comparisons,
   frameworks,
   getFramework,
   platforms,
@@ -9,16 +10,10 @@ import {
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export function generateStaticParams() {
-  const all = frameworks.map((post) => ({
-    slug: post.slug,
+export async function generateStaticParams() {
+  return comparisons.map((vs) => ({
+    slugs: vs,
   }));
-
-  return all.reduce((acc, curr) => {
-    const others = all.filter((fw) => fw.slug.localeCompare(curr.slug) > 0);
-    const rows = others.map((fw) => ({ slugs: `${curr.slug}-vs-${fw.slug}` }));
-    return [...acc, ...rows];
-  }, [] as Array<{ slugs: string }>);
 }
 
 type Props = {
@@ -26,18 +21,18 @@ type Props = {
 };
 
 const Title = ({ fw }: { fw: Framework }) => (
-  <div className="flex items-center space-x-4">
+  <Link href={`/${fw.slug}`} className="flex items-center space-x-2">
     <img
       alt={fw.name}
       loading="lazy"
       decoding="async"
-      className="h-12 w-12 rounded"
+      className="h-8 w-8 lg:w-12 lg:h-12 rounded"
       src={`/frameworks/${fw.slug}.svg`}
     />
-    <h1 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl">
+    <h2 className="text-xl font-bold tracking-tight text-zinc-800 lg:text-3xl">
       {fw.name}
-    </h1>
-  </div>
+    </h2>
+  </Link>
 );
 
 const About = ({ fw }: { fw: Framework }) => (
@@ -89,7 +84,6 @@ const TargetPlatforms = ({ fw }: { fw: Framework }) => (
 
 const Languages = ({ fw }: { fw: Framework }) => (
   <ul className="mt-2 flex flex-col">
-    <h3>Languages</h3>
     {fw.languages.map((l) => (
       <li key={l} className="py-0.5 text-sm">
         {l}
@@ -126,40 +120,48 @@ export default function Compare(props: Props) {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Link
-                href="/"
+                href={`/${fw1.slug}`}
                 className="text-sm mb-4 inline-block hover:bg-zinc-50 px-2 py-1 rounded"
               >
                 ← Back
               </Link>
-              <div className="grid md:grid-cols-3 gap-x-8 gap-y-12">
-                <div />
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:gap-y-12">
+                <div className="col-span-2 md:col-span-1" />
                 <Title fw={fw1} />
                 <Title fw={fw2} />
 
-                <h3>About</h3>
+                <h3 className="col-span-2 text-2xl md:col-span-1 md:text-base">
+                  About
+                </h3>
                 <About fw={fw1} />
                 <About fw={fw2} />
 
-                <h3>Community</h3>
+                <h3 className="col-span-2 text-2xl md:col-span-1 md:text-base">
+                  Community
+                </h3>
                 <Community fw={fw1} />
                 <Community fw={fw2} />
 
-                <h3>Languages</h3>
+                <h3 className="col-span-2 text-2xl md:col-span-1 md:text-base">
+                  Languages
+                </h3>
                 <Languages fw={fw1} />
                 <Languages fw={fw2} />
 
-                <h3>Target Platforms</h3>
+                <h3 className="col-span-2 text-2xl md:col-span-1 md:text-base">
+                  Target Platforms
+                </h3>
                 <TargetPlatforms fw={fw1} />
                 <TargetPlatforms fw={fw2} />
 
-                <h3 className="flex space-x-1">
+                <h3 className="flex space-x-2 col-span-2 text-2xl md:col-span-1 md:text-base">
                   <span>✅</span>
                   <span>Strengths</span>
                 </h3>
                 <ProsCons items={fw1.pros} />
                 <ProsCons items={fw2.pros} />
 
-                <h3 className="flex space-x-1">
+                <h3 className="flex space-x-2 col-span-2 text-2xl md:col-span-1 md:text-base">
                   <span>🛑</span>
                   <span>Weaknesses</span>
                 </h3>
