@@ -15,6 +15,31 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(props: Props) {
+  const [slug1, slug2] = props.params.slugs.split("-vs-");
+  const fw1 = getFramework(slug1);
+  const fw2 = getFramework(slug2);
+  if (!fw1 || !fw2) return;
+
+  return {
+    title: `Compare ${fw1.name} vs ${fw2.name} - BuildWith.app`,
+    description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
+    openGraph: {
+      title: `Compare ${fw1.name} vs ${fw2.name} - BuildWith.app`,
+      description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
+      url: `https://buildwith.app/compare/${props.params.slugs}`,
+      images: ["https://buildwith.app/og.png"],
+    },
+    twitter: {
+      title: `Compare ${fw1.name} vs ${fw1.name} - BuildWith.app`,
+      description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
+      card: "summary_large_image",
+      url: `https://buildwith.app/compare/${props.params.slugs}`,
+      images: ["https://buildwith.app/twitter.png"],
+    },
+  };
+}
+
 type Props = {
   params: { slugs: string };
 };
@@ -124,6 +149,15 @@ export default function Compare(props: Props) {
               >
                 ← Back
               </Link>
+              <header className="space-y-4 mb-20">
+                <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
+                  {fw1.name} vs {fw2.name}
+                </h1>
+                <p>
+                  How does {fw1.name} compare to {fw2.name}? <br /> See the pros
+                  and cons of each framework, target platforms and more.
+                </p>
+              </header>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:gap-y-12">
                 <div className="col-span-2 md:col-span-1" />
                 <Title fw={fw1} />
