@@ -3,7 +3,6 @@ import { GitHubTag, RedditTag, DiscordTag } from "@lib/components";
 import {
   Framework,
   comparisons,
-  frameworks,
   getFramework,
   platforms,
 } from "@lib/frameworks";

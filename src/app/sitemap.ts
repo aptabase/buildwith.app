@@ -9,7 +9,7 @@ export default async function sitemap() {
   }));
 
   const comparisonPages = comparisons.map((path) => ({
-    url: `https://buildwith.app/${path}`,
+    url: `https://buildwith.app/compare/${path}`,
     lastModified,
   }));
 
