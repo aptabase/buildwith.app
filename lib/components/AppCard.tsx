@@ -10,18 +10,18 @@ export function AppCard(props: Props) {
   return (
     <Link
       href={`/apps/${props.app.slug}`}
-      className="p-2 rounded flex hover:bg-zinc-100"
+      className="rounded flex hover:bg-zinc-100"
     >
       <img
         alt={props.app.name}
         loading="lazy"
         decoding="async"
-        className="h-12 w-12 rounded"
+        className="h-10 w-10 rounded"
         src={props.app.icon_url}
       />
-      <p className="flex flex-col ml-2">
-        <span className="font-title text-lg">{props.app.name}</span>
-        <span className="text-xs">by {props.app.author.name}</span>
+      <p className="flex flex-col ml-2 overflow-hidden">
+        <span className="font-title text-base">{props.app.name}</span>
+        <span className="text-xs truncate">by @{props.app.author.twitter}</span>
       </p>
     </Link>
   );

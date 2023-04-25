@@ -1,4 +1,10 @@
-import { TwitterTag, DiscordTag, GitHubTag, RedditTag } from "@lib/components";
+import {
+  TwitterTag,
+  DiscordTag,
+  GitHubTag,
+  RedditTag,
+  ExternalLink,
+} from "@lib/components";
 import { Framework, platforms } from "@lib/frameworks";
 
 type Props = {
@@ -7,8 +13,8 @@ type Props = {
 
 export function InfoPanel(props: Props) {
   return (
-    <div className="flex flex-col space-y-8">
-      <ul className="mt-2 flex flex-col space-y-1 min-w-[14rem]">
+    <div className="flex flex-col space-y-8 min-w-[14rem]">
+      <ul className="mt-2 flex flex-col space-y-1">
         <h3>About</h3>
         <li className="py-0.5 text-sm">
           <p className="text-zinc-600">Maintainer</p>
@@ -20,7 +26,7 @@ export function InfoPanel(props: Props) {
         </li>
       </ul>
 
-      <ul className="mt-2 flex flex-col space-y-1 min-w-[12rem]">
+      <ul className="mt-2 flex flex-col space-y-1">
         <h3>Community</h3>
         {props.framework.github && (
           <li>
@@ -68,12 +74,9 @@ export function InfoPanel(props: Props) {
       </ul>
       <div className="text-xs">
         <span className="block text-gray-500">Found a mistake?</span>
-        <a
-          href="https://github.com/aptabase/buildwith.app"
-          className="text-blue-600 hover:underline"
-        >
+        <ExternalLink href="https://github.com/aptabase/buildwith.app">
           Send us a PR
-        </a>
+        </ExternalLink>
       </div>
     </div>
   );

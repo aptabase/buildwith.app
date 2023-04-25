@@ -57,17 +57,17 @@ const Title = ({ fw }: { fw: Framework }) => (
       alt={fw.name}
       loading="lazy"
       decoding="async"
-      className="h-8 w-8 lg:w-12 lg:h-12 rounded"
+      className="h-6 w-6 md:h-8 md:w-8 lg:w-12 lg:h-12 rounded"
       src={`/frameworks/${fw.slug}.svg`}
     />
-    <h2 className="text-xl font-bold tracking-tight text-zinc-800 lg:text-3xl">
+    <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-zinc-800 lg:text-3xl">
       {fw.name}
     </h2>
   </Link>
 );
 
 const About = ({ fw }: { fw: Framework }) => (
-  <ul className="mt-2 flex flex-col space-y-1 min-w-[14rem]">
+  <ul className="mt-2 flex flex-col space-y-1">
     <li className="py-0.5 text-sm">
       <p className="text-xs text-zinc-600">Maintainer</p>
       {fw.maintainer}
@@ -80,7 +80,7 @@ const About = ({ fw }: { fw: Framework }) => (
 );
 
 const Community = ({ fw }: { fw: Framework }) => (
-  <ul className="mt-2 flex flex-col space-y-1 min-w-[12rem]">
+  <ul className="mt-2 flex flex-col space-y-1">
     {fw.github && (
       <li>
         <GitHubTag {...fw.github} />
@@ -178,7 +178,7 @@ export default function Compare(props: Props) {
                   and cons of each framework, target platforms and more.
                 </p>
               </header>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:gap-y-12">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-6 md:gap-y-12">
                 <div className="col-span-2 md:col-span-1" />
                 <Title fw={fw1} />
                 <Title fw={fw2} />

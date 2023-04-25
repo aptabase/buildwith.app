@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { apps, getApp } from "@lib/apps";
-import { AppStore, GooglePlay } from "@lib/components";
+import { AppStore, ExternalLink, GooglePlay } from "@lib/components";
 import { getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AppInfoPanel } from "./AppInfoPanel";
+import { DownloadButtons } from "./DownloadButtons";
 
 export async function generateStaticParams() {
   return apps.map((post) => ({
@@ -86,70 +88,25 @@ export default function App(props: Props) {
                 className="rounded-lg mt-10"
                 src={app.screenshot_url}
               />
-              <div className="md:flex justify-between gap-8 mt-8">
-                <ul className="prose">
+              <div className="md:flex justify-between gap-12 pt-12">
+                <AppInfoPanel app={app} framework={fw} />
+                <ul className="space-y-12 order-1">
                   {app.interview.map((qa) => (
-                    <li key={qa.answer}>
-                      <span className="text-base font-semibold">
+                    <li key={qa.question}>
+                      <span className="text-lg font-semibold text-zinc-800">
                         {qa.question}
                       </span>
-                      <p className="text-sm text-zinc-600">{qa.answer}</p>
+                      <div className="text-zinc-600 leading-7 space-y-4">
+                        {qa.answer}
+                      </div>
                     </li>
                   ))}
-                </ul>
-                <ul className="mt-2 flex flex-col text-sm space-y-4 min-w-[14rem]">
-                  <li>
-                    <p className="text-zinc-600">Built with</p>
-                    <Link
-                      href={fw.slug}
-                      className="flex items-center space-x-1"
-                    >
-                      <img
-                        alt={fw.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="h-6 w-6 rounded"
-                        src={`/frameworks/${fw.slug}.svg`}
-                      />
-                      <span className="text-lg font-title tracking-tight text-zinc-800">
-                        {fw.name}
-                      </span>
-                    </Link>
+                  <li className="md:hidden block">
+                    <DownloadButtons app={app} />
                   </li>
-                  <li>
-                    <p className="text-zinc-600">Maker</p>
-                    <p>{app.author.name}</p>
-                    <a
-                      className="text-blue-600 hover:underline"
-                      href={`https://twitter.com/${app.author.twitter}`}
-                      target="_blank"
-                    >
-                      @{app.author.twitter}
-                    </a>
-                  </li>
-                  <li>
-                    <p className="text-zinc-600">Website</p>
-                    <a
-                      className="text-blue-600 hover:underline"
-                      href={app.website}
-                      target="_blank"
-                    >
-                      {app.website}
-                    </a>
-                  </li>
-                  {app.stores?.google_play && (
-                    <li>
-                      <GooglePlay
-                        className="w-40"
-                        href={app.stores?.google_play}
-                      />
-                    </li>
-                  )}
-                  {app.stores?.app_store && (
-                    <li>
-                      <AppStore className="w-40" href={app.stores?.app_store} />
-                    </li>
-                  )}
+                  <p className="text-zinc-600 text-xs">
+                    This Q&A was published on {app.published_at}.
+                  </p>
                 </ul>
               </div>
             </div>

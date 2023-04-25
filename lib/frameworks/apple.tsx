@@ -2,7 +2,7 @@ import { Framework } from "./";
 
 export const apple: Framework = {
   slug: "apple",
-  name: "Apple (Native)",
+  name: "Apple Native",
   maintainer: "Apple",
   short_description: "Build truly native apps for Apple devices.",
   long_description: (

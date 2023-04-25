@@ -1,3 +1,5 @@
+import { ExternalLink } from "./ExternalLink";
+
 const social = [
   {
     name: "Twitter",
@@ -39,16 +41,14 @@ export function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-4 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-4 text-center text-sm leading-5 text-gray-500">
           Sponsored by{" "}
-          <a
-            href="https://aptabase.com/?utm_source=buildwith.app&utm_campaign=footer"
-            className="text-blue-600 hover:underline"
-          >
+          <ExternalLink href="https://aptabase.com/?utm_source=buildwith.app&utm_campaign=footer">
             Aptabase
-          </a>{" "}
-          <br />✨ Open Source, Privacy-Friendly and Simple Analytics for Apps
-          ✨
+          </ExternalLink>{" "}
+        </p>
+        <p className="text-center text-xs leading-5 text-gray-500">
+          Open Source, Privacy-First and Simple Analytics for Apps
         </p>
       </div>
     </footer>
