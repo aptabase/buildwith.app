@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { GitHubTag, RedditTag, DiscordTag } from "@lib/components";
+import { TwitterTag } from "@lib/components/TwitterTag";
 import {
   Framework,
   comparisons,
@@ -77,6 +78,11 @@ const Community = ({ fw }: { fw: Framework }) => (
     {fw.github && (
       <li>
         <GitHubTag {...fw.github} />
+      </li>
+    )}
+    {fw.twitter && (
+      <li>
+        <TwitterTag {...fw.twitter} />
       </li>
     )}
     <li>

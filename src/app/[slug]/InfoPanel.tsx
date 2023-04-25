@@ -1,4 +1,5 @@
 import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
+import { TwitterTag } from "@lib/components/TwitterTag";
 import { Framework, platforms } from "@lib/frameworks";
 
 type Props = {
@@ -25,6 +26,11 @@ export function InfoPanel(props: Props) {
         {props.framework.github && (
           <li>
             <GitHubTag {...props.framework.github} />
+          </li>
+        )}
+        {props.framework.twitter && (
+          <li>
+            <TwitterTag {...props.framework.twitter} />
           </li>
         )}
         <li>
