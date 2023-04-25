@@ -1,3 +1,4 @@
+import { apps } from "@lib/apps";
 import { comparisons, frameworks } from "@lib/frameworks";
 
 export default async function sitemap() {
@@ -5,6 +6,11 @@ export default async function sitemap() {
 
   const fwPages = frameworks.map((fw) => ({
     url: `https://buildwith.app/${fw.slug}`,
+    lastModified,
+  }));
+
+  const appPages = apps.map((app) => ({
+    url: `https://buildwith.app/apps/${app.slug}`,
     lastModified,
   }));
 

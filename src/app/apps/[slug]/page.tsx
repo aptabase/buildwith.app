@@ -1,13 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
-import { getApp } from "@lib/apps";
+import { apps, getApp } from "@lib/apps";
 import { AppStore, GooglePlay } from "@lib/components";
 import { getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  return apps.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 type Props = {
   params: { slug: string };
 };
+
+export async function generateMetadata(props: Props) {
+  const app = getApp(props.params.slug);
+  if (!app) return;
+
+  const fw = getFramework(app.framework);
+  if (!fw) return;
+
+  return {
+    title: `${app.name} by ${app.author.name} • Built with ${fw.name} • BuildWith.app`,
+    description: `Interview with ${app.name} creator ${app.author.name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+    openGraph: {
+      title: `${app.name} by ${app.author.name} • Built with ${fw.name} • BuildWith.app`,
+      description: `Interview with ${app.name} creator ${app.author.name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+      url: `https://buildwith.app/apps/${app.slug}`,
+      images: ["https://buildwith.app/og.png"],
+    },
+    twitter: {
+      title: `${app.name} by ${app.author.name} • Built with ${fw.name} • BuildWith.app`,
+      description: `Interview with ${app.name} creator ${app.author.name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+      card: "summary_large_image",
+      url: `https://buildwith.app/apps/${app.slug}`,
+      images: ["https://buildwith.app/twitter.png"],
+    },
+  };
+}
 
 export default function App(props: Props) {
   const app = getApp(props.params.slug);
@@ -23,7 +55,7 @@ export default function App(props: Props) {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Link
-                href="/"
+                href={fw.slug}
                 className="text-sm mb-4 inline-block hover:bg-zinc-50 px-2 py-1 rounded"
               >
                 ← Back
