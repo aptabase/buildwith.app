@@ -46,10 +46,27 @@ export default function App(props: Props) {
                   </div>
                 </div>
               </header>
-              <div className="md:flex justify-between gap-8">
-                <div></div>
+              <div className="md:flex justify-between gap-8 mt-8">
+                <div>
+                  <img
+                    alt={app.name}
+                    loading="lazy"
+                    decoding="async"
+                    className="rounded-lg max-h-[24rem]"
+                    src={app.screenshot_url}
+                  />
+                  <ul className="mt-8 prose">
+                    {app.interview.map((qa) => (
+                      <li key={qa.answer}>
+                        <span className="text-base font-semibold">
+                          {qa.question}
+                        </span>
+                        <p className="text-sm text-zinc-600">{qa.answer}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <ul className="mt-2 flex flex-col space-y-4 min-w-[14rem]">
-                  <h3>About</h3>
                   <li className="py-0.5 text-sm">
                     <p className="text-zinc-600">Built with</p>
                     <div className="flex items-center space-x-1">
