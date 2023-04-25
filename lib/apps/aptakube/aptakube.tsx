@@ -22,6 +22,20 @@ export const aptakube: App = {
   },
   interview: [
     {
+      question: "What is Aptakube?",
+      answer: (
+        <>
+          <p>
+            Simply put, Aptakube is a desktop client for Kubernetes. It&apos;s
+            an app to help teams operate their Kubernetes clusters. It&apos;s
+            like having the AWS console running on your desktop, but instead of
+            managing AWS resources the app is focused Kubernetes and its
+            ecosystem.
+          </p>
+        </>
+      ),
+    },
+    {
       question: "Who is behind Aptakube? Tell us a little bit about yourself.",
       answer: (
         <>
@@ -38,20 +52,6 @@ export const aptakube: App = {
             <ExternalLink href="https://aptabase.com">Aptabase</ExternalLink>,{" "}
             <ExternalLink href="https://fider.io">Fider</ExternalLink> and other
             side projects such as this website!
-          </p>
-        </>
-      ),
-    },
-    {
-      question: "What is Aptakube?",
-      answer: (
-        <>
-          <p>
-            Simply put, Aptakube is a desktop client for Kubernetes. It&apos;s
-            an app to help teams operate their Kubernetes clusters. It&apos;s
-            like having the AWS console running on your desktop, but instead of
-            managing AWS resources the app is focused Kubernetes and its
-            ecosystem.
           </p>
         </>
       ),
@@ -76,7 +76,7 @@ export const aptakube: App = {
     },
     {
       question:
-        "Do you want to share some numbers? Downloads, Users, MMR, whatever you want!",
+        "Do you want to share some numbers? Downloads, Users, MMR, whatever works for you!",
       answer: (
         <p>
           I&apos;m operating on a very small and competitive niche, with loads

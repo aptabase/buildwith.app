@@ -26,6 +26,22 @@ export const habitkit: App = {
   },
   interview: [
     {
+      question: "What is HabitKit?",
+      answer: (
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          convallis risus vel odio tristique, vel consequat neque consequat.
+          Nullam et sapien vel lorem congue sagittis eget id lorem. Fusce
+          blandit, ipsum id congue pulvinar, leo lectus placerat nisi, in
+          sagittis metus turpis nec mauris. Etiam viverra, enim sit amet varius
+          malesuada, tortor dui convallis risus, nec lacinia risus ipsum vel
+          nunc. Praesent lobortis vestibulum sapien, id ultricies nunc auctor
+          ac. Nullam sed lorem vel metus dapibus bibendum. Nullam vel odio sit
+          amet tellus tristique pharetra sit amet quis nisi.
+        </p>
+      ),
+    },
+    {
       question: "Who is behind HabitKit? Tell us a little bit about yourself.",
       answer: (
         <p>
@@ -60,7 +76,7 @@ export const habitkit: App = {
     },
     {
       question:
-        "Do you want to share some numbers? Downloads, Users, MMR, whatever you want!",
+        "Do you want to share some numbers? Downloads, Users, MMR, whatever works for you!",
       answer: (
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -93,7 +109,7 @@ export const habitkit: App = {
     },
     {
       question:
-        "If you were to start again, would you choose a different framework?",
+        "What do you dislike about Flutter? Would you choose a different framework if you had to start over?",
       answer: (
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
