@@ -67,6 +67,15 @@ export function InfoPanel(props: Props) {
           </li>
         ))}
       </ul>
+      <div className="text-xs">
+        <span className="block text-gray-500">Found a mistake?</span>
+        <a
+          href="https://github.com/aptabase/buildwith.app"
+          className="text-blue-600 hover:underline"
+        >
+          Send us a PR
+        </a>
+      </div>
     </div>
   );
 }
