@@ -1,5 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { TwitterTag, GitHubTag, RedditTag, DiscordTag } from "@lib/components";
+import { apps } from "@lib/apps";
+import {
+  TwitterTag,
+  GitHubTag,
+  RedditTag,
+  DiscordTag,
+  AppCard,
+} from "@lib/components";
 import {
   Framework,
   comparisons,
@@ -134,6 +141,16 @@ const ProsCons = ({
   </ul>
 );
 
+const AppsBuiltWith = ({ fw }: { fw: Framework }) => (
+  <div className="grid grid-cols-1">
+    {apps
+      .filter((app) => app.framework == fw.slug)
+      .map((app) => (
+        <AppCard key={app.slug} app={app} />
+      ))}
+  </div>
+);
+
 export default function Compare(props: Props) {
   const [slug1, slug2] = props.params.slugs.split("-vs-");
   const fw1 = getFramework(slug1);
@@ -203,6 +220,12 @@ export default function Compare(props: Props) {
                 </h3>
                 <ProsCons items={fw1.cons} />
                 <ProsCons items={fw2.cons} />
+
+                <h3 className="col-span-2 text-2xl md:col-span-1 md:text-base">
+                  Showcase
+                </h3>
+                <AppsBuiltWith fw={fw1} />
+                <AppsBuiltWith fw={fw2} />
               </div>
             </div>
           </div>

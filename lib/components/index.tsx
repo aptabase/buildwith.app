@@ -5,3 +5,4 @@ export * from "./DiscordTag";
 export * from "./Footer";
 export * from "./GooglePlay";
 export * from "./AppStore";
+export * from "./AppCard";
