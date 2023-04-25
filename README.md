@@ -6,4 +6,8 @@ Visit [buildwith.app](https://buildwith.app) to see the list of popular framewor
 
 ## Contributing
 
-I'm not an expert in all the frameworks, so I need your help to make this better. If you found a mistake or would like to add something, please submit a change. PR's are welcome 🙏
+I'm not an expert in all the frameworks, so I need your help to make this better. If you found a mistake or would like to add something, please submit a change. PR's are welcome!
+
+## Thanks 🙏
+
+BuildWith.app is sponsored by [Aptabase](https://aptabase.com) — The open source, privacy-first and simple analytics for mobile and desktop apps.
