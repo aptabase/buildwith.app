@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { getApp } from "@lib/apps";
+import { AppStore, GooglePlay } from "@lib/components";
 import { getFramework } from "@lib/frameworks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -46,30 +47,31 @@ export default function App(props: Props) {
                   </div>
                 </div>
               </header>
+              <img
+                alt={app.name}
+                loading="lazy"
+                decoding="async"
+                className="rounded-lg mt-10"
+                src={app.screenshot_url}
+              />
               <div className="md:flex justify-between gap-8 mt-8">
-                <div>
-                  <img
-                    alt={app.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="rounded-lg max-h-[24rem]"
-                    src={app.screenshot_url}
-                  />
-                  <ul className="mt-8 prose">
-                    {app.interview.map((qa) => (
-                      <li key={qa.answer}>
-                        <span className="text-base font-semibold">
-                          {qa.question}
-                        </span>
-                        <p className="text-sm text-zinc-600">{qa.answer}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <ul className="mt-2 flex flex-col space-y-4 min-w-[14rem]">
-                  <li className="py-0.5 text-sm">
+                <ul className="prose">
+                  {app.interview.map((qa) => (
+                    <li key={qa.answer}>
+                      <span className="text-base font-semibold">
+                        {qa.question}
+                      </span>
+                      <p className="text-sm text-zinc-600">{qa.answer}</p>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="mt-2 flex flex-col text-sm space-y-4 min-w-[14rem]">
+                  <li>
                     <p className="text-zinc-600">Built with</p>
-                    <div className="flex items-center space-x-1">
+                    <Link
+                      href={fw.slug}
+                      className="flex items-center space-x-1"
+                    >
                       <img
                         alt={fw.name}
                         loading="lazy"
@@ -80,27 +82,42 @@ export default function App(props: Props) {
                       <span className="text-lg font-title tracking-tight text-zinc-800">
                         {fw.name}
                       </span>
-                    </div>
+                    </Link>
                   </li>
-                  <li className="py-0.5 text-sm">
+                  <li>
                     <p className="text-zinc-600">Maker</p>
                     <p>{app.author.name}</p>
                     <a
                       className="text-blue-600 hover:underline"
-                      href={`https://twitter.com/${app.author}`}
+                      href={`https://twitter.com/${app.author.twitter}`}
+                      target="_blank"
                     >
                       @{app.author.twitter}
                     </a>
                   </li>
-                  <li className="py-0.5 text-sm">
+                  <li>
                     <p className="text-zinc-600">Website</p>
                     <a
                       className="text-blue-600 hover:underline"
                       href={app.website}
+                      target="_blank"
                     >
                       {app.website}
                     </a>
                   </li>
+                  {app.stores?.google_play && (
+                    <li>
+                      <GooglePlay
+                        className="w-40"
+                        href={app.stores?.google_play}
+                      />
+                    </li>
+                  )}
+                  {app.stores?.app_store && (
+                    <li>
+                      <AppStore className="w-40" href={app.stores?.app_store} />
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

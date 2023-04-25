@@ -1,5 +1,4 @@
-import { DiscordTag, GitHubTag, RedditTag } from "@lib/components";
-import { TwitterTag } from "@lib/components/TwitterTag";
+import { TwitterTag, DiscordTag, GitHubTag, RedditTag } from "@lib/components";
 import { Framework, platforms } from "@lib/frameworks";
 
 type Props = {

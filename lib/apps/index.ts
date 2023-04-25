@@ -10,6 +10,10 @@ export type App = {
   screenshot_url: string;
   framework: string;
   author: { name: string; twitter: string };
+  stores?: {
+    google_play?: string;
+    app_store?: string;
+  };
   interview: Array<{ question: string; answer: string }>;
 };
 

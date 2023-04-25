@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { GitHubTag, RedditTag, DiscordTag } from "@lib/components";
-import { TwitterTag } from "@lib/components/TwitterTag";
+import { TwitterTag, GitHubTag, RedditTag, DiscordTag } from "@lib/components";
 import {
   Framework,
   comparisons,

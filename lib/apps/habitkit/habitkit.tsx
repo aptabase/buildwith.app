@@ -10,6 +10,12 @@ export const habitkit: App = {
   screenshot_url: screenshot.src,
   framework: "flutter",
   website: "https://www.habitkit.app/",
+  stores: {
+    google_play:
+      "https://play.google.com/store/apps/details?id=com.roehl.habitkit",
+    app_store:
+      "https://apps.apple.com/us/app/habit-tracker-habitkit/id6443918070",
+  },
   author: {
     name: "Sebastian Röhl",
     twitter: "SebastianRoehl",
