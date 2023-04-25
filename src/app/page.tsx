@@ -31,7 +31,7 @@ export default function Home() {
               <div className="flex gap-8">
                 <header>
                   <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl xl:text-6xl">
-                    Find the best framework for you next app.
+                    Find the best framework for your next app.
                   </h1>
                   <p className="mt-6 text-base text-zinc-600">
                     Thinking about building a new app and not sure which
