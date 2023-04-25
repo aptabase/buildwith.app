@@ -24,5 +24,5 @@ export default async function sitemap() {
     lastModified,
   }));
 
-  return [...routes, ...fwPages, ...comparisonPages];
+  return [...routes, ...fwPages, ...appPages, ...comparisonPages];
 }
