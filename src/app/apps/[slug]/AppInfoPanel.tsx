@@ -57,7 +57,7 @@ export function AppInfoPanel(props: Props) {
       </li>
       <li>
         <p className="text-zinc-600">Website</p>
-        <ExternalLink href={props.app.website}>
+        <ExternalLink href={`${props.app.website}?utm_source=buildwith.app`}>
           {props.app.website}
         </ExternalLink>
       </li>
