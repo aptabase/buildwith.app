@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { App } from "@lib/apps";
-import { AppStore, GooglePlay } from "@lib/components";
+import { AppStore, GooglePlay, Setapp } from "@lib/components";
 
 type Props = {
   app: App;
@@ -19,6 +19,12 @@ export function DownloadButtons(props: Props) {
         <AppStore
           className="h-12 md:w-40 md:h-auto"
           href={props.app.stores?.app_store}
+        />
+      )}
+      {props.app.stores?.setapp && (
+        <Setapp
+          className="h-12 md:w-40 md:h-auto"
+          href={props.app.stores?.setapp}
         />
       )}
     </div>

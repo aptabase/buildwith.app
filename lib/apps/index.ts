@@ -1,5 +1,6 @@
 import { aptakube } from "./aptakube/aptakube";
 import { habitkit } from "./habitkit/habitkit";
+import { session } from "./session/session";
 
 export type App = {
   slug: string;
@@ -15,11 +16,12 @@ export type App = {
   stores?: {
     google_play?: string;
     app_store?: string;
+    setapp?: string;
   };
   interview: Array<{ question: string; answer: JSX.Element }>;
 };
 
-export const apps = [aptakube, habitkit];
+export const apps = [aptakube, habitkit, session];
 
 export const getApp = (slug: string): App | undefined => {
   return apps.find((app) => app.slug === slug);
