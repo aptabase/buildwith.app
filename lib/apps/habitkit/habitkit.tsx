@@ -42,7 +42,7 @@ export const habitkit: App = {
       ),
     },
     {
-      question: "Who is behind HabitKit? Tell us a little bit about yourself.",
+      question: "Who is behind HabitKit? Tell us a bit about yourself.",
       answer: (
         <p>
           I&apos;m Sebastian, 30 years old and from Germany. After finishing
@@ -74,7 +74,7 @@ export const habitkit: App = {
     },
     {
       question:
-        "Do you want to share some numbers? Downloads, Users, MMR, whatever works for you!",
+        "Do you want to share some numbers? Downloads, users, MMR, whatever works for you!",
       answer: (
         <p>
           So far, I&apos;ve managed to publish two apps which have brought in a
@@ -86,7 +86,7 @@ export const habitkit: App = {
       ),
     },
     {
-      question: "Why Flutter? What made you choose it for your project?",
+      question: "Why Flutter? What made you choose it for this project?",
       answer: (
         <p>
           Since my project ideas centered around mobile user experiences, I
