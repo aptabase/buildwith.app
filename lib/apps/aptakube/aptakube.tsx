@@ -36,7 +36,7 @@ export const aptakube: App = {
       ),
     },
     {
-      question: "Who is behind Aptakube? Tell us a little bit about yourself.",
+      question: "Who is behind Aptakube? Tell us a bit about yourself.",
       answer: (
         <>
           <p>
@@ -76,7 +76,7 @@ export const aptakube: App = {
     },
     {
       question:
-        "Do you want to share some numbers? Downloads, Users, MMR, whatever works for you!",
+        "Do you want to share some numbers? Downloads, users, MMR, whatever works for you!",
       answer: (
         <p>
           I&apos;m operating on a very small and competitive niche, with loads
@@ -89,7 +89,7 @@ export const aptakube: App = {
       ),
     },
     {
-      question: "Why Tauri? What made you choose it for your project?",
+      question: "Why Tauri? What made you choose it for this app?",
       answer: (
         <>
           <p>
