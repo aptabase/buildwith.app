@@ -39,7 +39,7 @@ export const nativescript: Framework = {
     {
       title: "Performance",
       description:
-        "NativeScript uses JavaScript as a bridge to Native APIs, which is limited to a single-thread and may not perform as well as those built natively.",
+        "NativeScript's performance is not as good as that of native apps due to the overhead introduced by the bridge between JavaScript and native APIs.",
     },
     {
       title: "Emerging Community",
