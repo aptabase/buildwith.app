@@ -19,7 +19,7 @@ export default async function handler(props: Props) {
     path.join(
       fileURLToPath(import.meta.url),
       process.env.VERCEL
-        ? "../../../CalSans-SemiBold.ttf"
+        ? "../../../../CalSans-SemiBold.ttf"
         : "../../../../public/CalSans-SemiBold.ttf"
     )
   );
