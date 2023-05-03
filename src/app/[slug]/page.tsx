@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-ignore
 /* eslint-disable @next/next/no-img-element */
 import { frameworks, getFramework } from "@lib/frameworks";
 import Link from "next/link";
