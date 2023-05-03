@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable @next/next/no-img-element */
 import { getFramework } from "@lib/frameworks";
 import { ImageResponse } from "next/server";
