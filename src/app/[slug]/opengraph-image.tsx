@@ -18,7 +18,7 @@ export default async function handler(props: Props) {
   const calSansData = await readFile(
     path.join(
       fileURLToPath(import.meta.url),
-      "../../../../node_modules/cal-sans/fonts/webfonts/CalSans-SemiBold.ttf"
+      "../../../../public/CalSans-SemiBold.ttf"
     )
   );
   const bgData = await readFile(
