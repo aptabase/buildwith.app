@@ -28,7 +28,7 @@ export function Setapp(props: Props) {
         <g
           id="Media-Kit"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
           fillRule="evenodd"
         >
@@ -42,7 +42,7 @@ export function Setapp(props: Props) {
                 <rect
                   id="path-1"
                   stroke="#A6A6A6"
-                  stroke-width="2"
+                  strokeWidth="2"
                   fill="#000000"
                   fillRule="nonzero"
                   mask="url(#mask-2)"
