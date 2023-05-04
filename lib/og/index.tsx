@@ -12,8 +12,6 @@ import nativescript from "./assets/nativescript.png";
 import reactnative from "./assets/reactnative.png";
 import tauri from "./assets/tauri.png";
 
-export const runtime = "edge";
-
 const frameworkLogos = {
   android,
   apple,
@@ -31,12 +29,12 @@ const baseUrl = process.env.VERCEL_URL
   : "http://localhost:3000";
 
 const fetchCalSans = fetch(
-  new URL(`./assets/CalSans-SemiBold.ttf`, import.meta.url)
+  `https://buildwith.app/og-assets/CalSans-SemiBold.ttf`
 ).then((res) => res.arrayBuffer());
 
-const fetchBackground = fetch(
-  new URL(`./assets/og-bg.jpg`, import.meta.url)
-).then((res) => res.arrayBuffer());
+const fetchBackground = fetch(`https://buildwith.app/og-assets/og-bg.jpg`).then(
+  (res) => res.arrayBuffer()
+);
 
 export const fetchLocalImage = (path: string) =>
   fetch(new URL(path, baseUrl)).then((x) => x.arrayBuffer());
