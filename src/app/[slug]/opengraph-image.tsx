@@ -18,13 +18,11 @@ export default async function handler(props: Props) {
   const calSansData = await readFile(
     path.join(
       fileURLToPath(import.meta.url),
-      process.env.VERCEL
-        ? "../../../../CalSans-SemiBold.ttf"
-        : "../../../../public/CalSans-SemiBold.ttf"
+      "../../assets/CalSans-SemiBold.ttf"
     )
   );
   const bgData = await readFile(
-    path.join(fileURLToPath(import.meta.url), "../../../../public/og-bg.jpg")
+    path.join(fileURLToPath(import.meta.url), "../../assets/og-bg.jpg")
   );
 
   const logoData = await readFile(
