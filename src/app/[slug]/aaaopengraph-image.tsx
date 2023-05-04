@@ -10,11 +10,11 @@ type Props = {
   params: { slug: string };
 };
 
-const calSans = fetch(new URL("./CalSans-SemiBold.ttf", import.meta.url)).then(
-  (res) => res.arrayBuffer()
-);
+const calSans = fetch(
+  `https://buildwith.app/og-assets/CalSans-SemiBold.ttf`
+).then((res) => res.arrayBuffer());
 
-const bg = fetch(new URL("./og-bg.jpg", import.meta.url)).then((res) =>
+const bg = fetch(`https://buildwith.app/og-assets/og-bg.jpg`).then((res) =>
   res.arrayBuffer()
 );
 
@@ -26,7 +26,7 @@ export default async function handler(props: Props) {
   const bgData = await bg;
 
   const logoData = await fetch(
-    `https://buildwith.app/frameworks/${fw.slug}.png`
+    `https://buildwith.app/og-assets/${fw.slug}.png`
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
