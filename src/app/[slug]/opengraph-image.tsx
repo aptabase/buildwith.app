@@ -7,29 +7,31 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { notFound } from "next/navigation";
 
+export const config = {
+  runtime: "edge",
+};
+
 type Props = {
   params: { slug: string };
 };
+
+const calSans = fetch(new URL("./CalSans-SemiBold.ttf", import.meta.url)).then(
+  (res) => res.arrayBuffer()
+);
+
+const bg = fetch(new URL("./og-bg.jpg", import.meta.url)).then((res) =>
+  res.arrayBuffer()
+);
 
 export default async function handler(props: Props) {
   const fw = getFramework(props.params.slug);
   if (!fw) return notFound();
 
-  const calSansData = await readFile(
-    path.join(
-      fileURLToPath(import.meta.url),
-      "../../assets/CalSans-SemiBold.ttf"
-    )
-  );
-  const bgData = await readFile(
-    path.join(fileURLToPath(import.meta.url), "../../assets/og-bg.jpg")
-  );
+  const calSansData = await calSans;
+  const bgData = await bg;
 
   const logoData = await readFile(
-    path.join(
-      fileURLToPath(import.meta.url),
-      `../../../../public/frameworks/${props.params.slug}.png`
-    )
+    path.join(fileURLToPath(import.meta.url), `./${props.params.slug}.png`)
   );
 
   return new ImageResponse(
@@ -38,7 +40,7 @@ export default async function handler(props: Props) {
         <img
           width="1200"
           height="630"
-          src={new Uint8Array(bgData).buffer}
+          src={bgData}
           tw="absolute inset-0"
           alt="Background"
         />
@@ -57,11 +59,7 @@ export default async function handler(props: Props) {
           }}
         >
           <div style={{ display: "flex" }} tw="max-h-28">
-            <img
-              src={new Uint8Array(logoData).buffer}
-              tw="h-full"
-              alt={fw.name}
-            />
+            <img src={logoData} tw="h-full" alt={fw.name} />
           </div>
           {fw.name}
         </div>
@@ -74,7 +72,7 @@ export default async function handler(props: Props) {
       fonts: [
         {
           name: "cal-sans",
-          data: new Uint8Array(calSansData).buffer,
+          data: calSansData,
           style: "normal",
         },
       ],
