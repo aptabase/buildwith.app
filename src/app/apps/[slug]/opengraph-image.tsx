@@ -38,40 +38,40 @@ export default async function handler(props: Props) {
       }}
     >
       <div tw="flex items-center">
-        <div tw="flex max-h-30 items-center">
+        <div tw="flex max-h-40 items-center">
           <img src={icon} tw="h-full" alt={app.name} />
         </div>
-        <div tw="flex flex-col ml-4 mb-6">
-          <span tw="text-[5rem]">{app.name}</span>
-          <span tw="text-[2rem] text-zinc-600">{app.description}</span>
+        <div tw="flex flex-col ml-8 mb-6">
+          <span tw="text-[6rem]">{app.name}</span>
+          <span tw="text-[3rem] text-zinc-600">{app.description}</span>
         </div>
       </div>
 
       <div tw="flex items-center justify-around w-[50%] mt-10">
         <div tw="flex flex-col">
-          <span tw="text-xl font-sans text-zinc-600 mb-1">Built with</span>
+          <span tw="text-2xl font-sans text-zinc-600 mb-1">Built with</span>
           <div tw="flex items-center">
-            <div tw="flex max-h-8 items-center">
+            <div tw="flex max-h-12 items-center">
               <img src={fwLogo} tw="h-full" alt={fw.name} />
             </div>
-            <span tw="text-3xl ml-2 mb-2">{fw.name}</span>
+            <span tw="text-4xl ml-2 mb-2">{fw.name}</span>
           </div>
         </div>
 
         <div tw="flex flex-col">
-          <span tw="text-xl font-sans text-zinc-600 mb-1">Maker</span>
+          <span tw="text-2xl font-sans text-zinc-600 mb-1">Maker</span>
           <div tw="flex items-center">
-            <div tw="flex max-h-10 items-center">
+            <div tw="flex max-h-12 items-center">
               <img src={maker} tw="h-full rounded-full" alt={app.author.name} />
             </div>
-            <span tw="text-2xl ml-2 mb-2">@{app.author.twitter}</span>
+            <span tw="text-4xl ml-2 mb-2">@{app.author.twitter}</span>
           </div>
         </div>
       </div>
 
-      <div tw="flex flex-col w-[40%] mt-10 text-xl items-center">
+      <div tw="flex flex-col w-[60%] mt-14 text-3xl items-center">
         <span>&quot;{app.highlight}&quot;</span>
-        <span tw="text-zinc-600 text-lg">— {app.author.name}</span>
+        <span tw="text-zinc-600 text-2xl mt-4">— {app.author.name}</span>
       </div>
     </div>
   );
