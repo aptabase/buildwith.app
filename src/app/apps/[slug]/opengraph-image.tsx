@@ -19,13 +19,20 @@ export default async function handler(props: Props) {
   if (!fw) return notFound();
 
   const icon = await fetch(
-    new URL(app.icon_url, process.env.VERCEL_URL || "http://localhost:3000/")
+    new URL(
+      app.icon_url,
+      process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000/"
+    )
   ).then((x) => x.arrayBuffer());
 
   const maker = await fetch(
     new URL(
       app.author.profile_img,
-      process.env.VERCEL_URL || "http://localhost:3000/"
+      process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000/"
     )
   ).then((x) => x.arrayBuffer());
 
@@ -80,7 +87,7 @@ export default async function handler(props: Props) {
 
       <div tw="flex flex-col w-[40%] mt-10 text-xl items-center">
         <span>&quot;{app.highlight}&quot;</span>
-        <span tw="text-zinc-600">— {app.author.name}</span>
+        <span tw="text-zinc-600 text-lg">— {app.author.name}</span>
       </div>
     </div>
   );
