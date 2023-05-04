@@ -12,6 +12,8 @@ import nativescript from "./assets/nativescript.png";
 import reactnative from "./assets/reactnative.png";
 import tauri from "./assets/tauri.png";
 
+export const runtime = "edge";
+
 const frameworkLogos = {
   android,
   apple,
