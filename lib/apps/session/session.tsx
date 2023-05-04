@@ -22,6 +22,7 @@ export const session: App = {
     twitter: "philipyoungg",
     profile_img: philipyoungg.src,
   },
+  highlight: "",
   interview: [
     {
       question: "What is Session?",
