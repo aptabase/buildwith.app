@@ -7,6 +7,11 @@ type Props = {
 };
 
 export function AppCard(props: Props) {
+  const by =
+    props.app.makers.length === 1
+      ? `by @${props.app.makers[0].twitter}`
+      : `by ${props.app.makers.length} indie makers`;
+
   return (
     <Link
       href={`/apps/${props.app.slug}`}
@@ -21,7 +26,7 @@ export function AppCard(props: Props) {
       />
       <p className="flex flex-col ml-2 overflow-hidden">
         <span className="font-title text-base">{props.app.name}</span>
-        <span className="text-xs truncate">by @{props.app.author.twitter}</span>
+        <span className="text-xs truncate">{by}</span>
       </p>
     </Link>
   );

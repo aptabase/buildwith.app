@@ -8,3 +8,4 @@ export * from "./AppStore";
 export * from "./Setapp";
 export * from "./AppCard";
 export * from "./ExternalLink";
+export * from "./DownloadNow";

@@ -20,8 +20,8 @@ export function GooglePlay(props: Props) {
           y1="28.73"
           y2="50.283"
         >
-          <stop offset="0" stop-color="#ff3944" />
-          <stop offset="1" stop-color="#c31161" />
+          <stop offset="0" stopColor="#ff3944" />
+          <stop offset="1" stopColor="#c31161" />
         </linearGradient>
         <linearGradient
           id="b"
@@ -31,8 +31,8 @@ export function GooglePlay(props: Props) {
           y1="32.154"
           y2="49.37"
         >
-          <stop offset="0" stop-color="#cc2d36" />
-          <stop offset="1" stop-color="#9c0e4e" />
+          <stop offset="0" stopColor="#cc2d36" />
+          <stop offset="1" stopColor="#9c0e4e" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -42,8 +42,8 @@ export function GooglePlay(props: Props) {
           y1="38.006"
           y2="40.034"
         >
-          <stop offset="0" stop-color="#df333b" />
-          <stop offset="1" stop-color="#ab0f55" />
+          <stop offset="0" stopColor="#df333b" />
+          <stop offset="1" stopColor="#ab0f55" />
         </linearGradient>
         <mask
           id="d"

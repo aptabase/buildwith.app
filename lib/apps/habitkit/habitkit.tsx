@@ -19,19 +19,19 @@ export const habitkit: App = {
     app_store:
       "https://apps.apple.com/us/app/habit-tracker-habitkit/id6443918070",
   },
-  author: {
-    name: "Sebastian Röhl",
-    twitter: "SebastianRoehl",
-    profile_img: SebastianRoehl.src,
-  },
+  makers: [
+    {
+      name: "Sebastian Röhl",
+      twitter: "SebastianRoehl",
+      profile_img: SebastianRoehl.src,
+    },
+  ],
   highlight:
     "The cool grid-based visualization of my progress in the app totally made a difference for me, and I just knew I had to share this opportunity with others.",
   interview: [
     {
       question: "What is HabitKit?",
-      answer: (
-        <p>
-          HabitKit is a habit tracking app designed to help users form new
+      answer: `HabitKit is a habit tracking app designed to help users form new
           habits or break old ones. It allows users to track their progress
           using beautiful tile-based grid charts on a customizable dashboard.
           The app also offers features like habit creation, a calendar for
@@ -40,14 +40,11 @@ export const habitkit: App = {
           Additionally, HabitKit is privacy-focused, as it does not require
           sign-in and keeps all data on the user&apos;s phone without using any
           external servers or cloud services.
-        </p>
-      ),
+      `,
     },
     {
       question: "Who is behind HabitKit? Tell us a bit about yourself.",
-      answer: (
-        <p>
-          I&apos;m Sebastian, 30 years old and from Germany. After finishing
+      answer: `I&apos;m Sebastian, 30 years old and from Germany. After finishing
           university, I spent three years working as a Software Engineer. But I
           always had this dream of starting a small company to create and
           release my very own apps. So, I took a leap of faith, quit my job for
@@ -55,66 +52,48 @@ export const habitkit: App = {
           tracking app called Liftbear, didn&apos;t quite take off, but I
           learned a ton in the process. Then came my second app, HabitKit, which
           turned out to be way more popular! I&apos;m super excited with how
-          it&apos;s doing right now.
-        </p>
-      ),
+          it&apos;s doing right now.`,
     },
     {
       question:
         "Why did you build HabitKit? How did you come up with the idea?",
-      answer: (
-        <p>
-          I came up with HabitKit because I wanted to improve my life and create
+      answer: `I came up with HabitKit because I wanted to improve my life and create
           some healthy habits. So, I got to work on the app and while building
           it I began tracking my progress in various aspects of my life, like
           weightlifting, running, reading, and a bunch of mental health-related
           activities. The cool grid-based visualization of my progress in the
           app totally made a difference for me, and I just knew I had to share
-          this opportunity with others.
-        </p>
-      ),
+          this opportunity with others.`,
     },
     {
       question:
         "Do you want to share some numbers? Downloads, users, MMR, whatever works for you!",
-      answer: (
-        <p>
-          So far, I&apos;ve managed to publish two apps which have brought in a
+      answer: `So far, I&apos;ve managed to publish two apps which have brought in a
           total revenue of ~$6k. With a monthly recurring revenue of ~$500,
           I&apos;ve seen more than 12k app downloads, showing that things are
           moving in the right direction. Plus, I&apos;ve managed to build a
-          community on Twitter, with 3.7k followers and counting!
-        </p>
-      ),
+          community on Twitter, with 3.7k followers and counting!`,
     },
     {
       question: "Why Flutter? What made you choose it for this project?",
-      answer: (
-        <p>
-          Since my project ideas centered around mobile user experiences, I
+      answer: `Since my project ideas centered around mobile user experiences, I
           naturally gravitated towards Flutter. I had a blast with the developer
           experience, and it let me quickly build apps for both iOS and Android
           using just one codebase. Plus, the package ecosystem is super solid,
           and there are plenty of great learning resources out there. Without a
-          doubt, I&apos;d pick Flutter again for any future mobile app projects.
-        </p>
-      ),
+          doubt, I&apos;d pick Flutter again for any future mobile app projects.`,
     },
     {
       question:
         "What do you dislike about Flutter? Would you choose a different framework if you had to start over?",
-      answer: (
-        <p>
-          As I stated before, I would definitely choose Flutter over another
+      answer: `As I stated before, I would definitely choose Flutter over another
           framework again. I rarely encountered problems while developing with
           it. I experienced some kind of lag and animation jank on iOS devices,
           but there were some great resources available on how to counter this
           problems. I would wish that the Flutter team would focus their ongoing
           efforts on the mobile platforms and not spread out too much (like
           supporting web for example). But all in all, it&apos;s a great
-          framework!
-        </p>
-      ),
+          framework!`,
     },
   ],
 };

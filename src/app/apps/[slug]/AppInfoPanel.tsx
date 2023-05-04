@@ -13,7 +13,7 @@ type Props = {
 export function AppInfoPanel(props: Props) {
   return (
     <ul className="grid grid-cols-2 gap-6 text-sm order-2 mb-12 md:mb-0 md:block md:space-y-6 min-w-[14rem]">
-      <li>
+      <li className="space-y-1">
         <p className="text-zinc-600">Built with</p>
         <Link
           href={`/${props.framework.slug}`}
@@ -31,29 +31,33 @@ export function AppInfoPanel(props: Props) {
           </span>
         </Link>
       </li>
-      <li>
-        <p className="text-zinc-600">Maker</p>
-        <div className="flex space-x-2">
-          <img
-            alt={props.app.author.name}
-            loading="lazy"
-            decoding="async"
-            className="h-10 w-10 rounded-full"
-            src={props.app.author.profile_img}
-          />
-          <div>
-            <p className="font-medium">{props.app.author.name}</p>
-            <ExternalLink
-              href={`https://twitter.com/${props.app.author.twitter}`}
-            >
-              @{props.app.author.twitter}
-            </ExternalLink>
-          </div>
-        </div>
+      <li className="space-y-1">
+        <p className="text-zinc-600">
+          {props.app.makers.length === 1 ? "Maker" : "Makers"}
+        </p>
+        <ul className="space-y-2">
+          {props.app.makers.map((maker) => (
+            <li key={maker.twitter} className="flex space-x-2">
+              <img
+                alt={maker.name}
+                loading="lazy"
+                decoding="async"
+                className="h-10 w-10 rounded-full"
+                src={maker.profile_img}
+              />
+              <div>
+                <p className="font-medium">{maker.name}</p>
+                <ExternalLink href={`https://twitter.com/${maker.twitter}`}>
+                  @{maker.twitter}
+                </ExternalLink>
+              </div>
+            </li>
+          ))}
+        </ul>
       </li>
       <li>
         <p className="text-zinc-600">First Release</p>
-        {props.app.initial_release}
+        <span>{props.app.initial_release}</span>
       </li>
       <li>
         <p className="text-zinc-600">Website</p>
