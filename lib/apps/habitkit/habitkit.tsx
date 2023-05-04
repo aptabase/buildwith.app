@@ -24,6 +24,8 @@ export const habitkit: App = {
     twitter: "SebastianRoehl",
     profile_img: SebastianRoehl.src,
   },
+  highlight:
+    "The cool grid-based visualization of my progress in the app totally made a difference for me, and I just knew I had to share this opportunity with others.",
   interview: [
     {
       question: "What is HabitKit?",

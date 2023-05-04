@@ -18,6 +18,7 @@ export type App = {
     app_store?: string;
     setapp?: string;
   };
+  highlight: string;
   interview: Array<{ question: string; answer: JSX.Element }>;
 };
 

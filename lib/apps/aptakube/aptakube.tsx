@@ -7,8 +7,7 @@ import goenning from "./goenning.jpg";
 export const aptakube: App = {
   slug: "aptakube",
   name: "Aptakube",
-  description:
-    "Modern, lightweight and multi-cluster Kubernetes desktop client",
+  description: "Kubernetes Desktop Client",
   icon_url: icon.src,
   screenshot_url: screenshot.src,
   initial_release: "January 2023",
@@ -20,6 +19,8 @@ export const aptakube: App = {
     twitter: "goenning",
     profile_img: goenning.src,
   },
+  highlight:
+    "So I did what most developers do when they can't find a tool that fits their needs: I built my own!",
   interview: [
     {
       question: "What is Aptakube?",

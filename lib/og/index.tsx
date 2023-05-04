@@ -21,7 +21,7 @@ export async function OpenGraphImage(children: JSX.Element) {
 
   return new ImageResponse(
     (
-      <div tw="flex text-gray-800">
+      <div tw="flex text-zinc-800">
         <img
           width="1200"
           height="630"

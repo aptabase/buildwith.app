@@ -1,83 +1,87 @@
 // @ts-nocheck
 /* eslint-disable @next/next/no-img-element */
 import { getFramework } from "@lib/frameworks";
-import { ImageResponse } from "next/server";
-import { readFile } from "fs/promises";
-import path from "path";
-import { fileURLToPath } from "url";
 import { notFound } from "next/navigation";
+import { fetchFrameworkLogo, OpenGraphImage } from "@lib/og";
+import { getApp } from "@lib/apps";
+
+export const runtime = "edge";
 
 type Props = {
   params: { slug: string };
 };
 
 export default async function handler(props: Props) {
-  const fw = getFramework(props.params.slug);
+  const app = getApp(props.params.slug);
+  if (!app) return notFound();
+
+  const fw = getFramework(app.framework);
   if (!fw) return notFound();
 
-  const calSansData = await readFile(
-    path.join(
-      fileURLToPath(import.meta.url),
-      "../../../../node_modules/cal-sans/fonts/webfonts/CalSans-SemiBold.ttf"
-    )
-  );
-  const bgData = await readFile(
-    path.join(fileURLToPath(import.meta.url), "../../../../public/og-bg.jpg")
-  );
+  const icon = await fetch(
+    new URL(app.icon_url, process.env.VERCEL_URL || "http://localhost:3000/")
+  ).then((x) => x.arrayBuffer());
 
-  const fwLogoData = await readFile(
-    path.join(
-      fileURLToPath(import.meta.url),
-      `../../../../public/frameworks/${props.params.slug}.png`
+  const maker = await fetch(
+    new URL(
+      app.author.profile_img,
+      process.env.VERCEL_URL || "http://localhost:3000/"
     )
-  );
+  ).then((x) => x.arrayBuffer());
 
-  return new ImageResponse(
-    (
-      <div tw="flex">
-        <img
-          width="1200"
-          height="630"
-          src={new Uint8Array(bgData).buffer}
-          tw="absolute inset-0"
-          alt="Background"
-        />
-        <div
-          style={{
-            display: "flex",
-            height: "100vh",
-            width: "100%",
-            fontSize: 100,
-            fontFamily: '"cal-sans"',
-            textAlign: "center",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            flexWrap: "nowrap",
-          }}
-        >
-          <div style={{ display: "flex" }} tw="max-h-28">
-            <img
-              src={new Uint8Array(logoData).buffer}
-              tw="h-full"
-              alt={fw.name}
-            />
-          </div>
-          {fw.name}
+  const fwLogo = await fetchFrameworkLogo(fw.slug);
+
+  return await OpenGraphImage(
+    <div
+      style={{
+        display: "flex",
+        height: "100vh",
+        width: "100%",
+        fontSize: 80,
+        fontFamily: '"cal-sans"',
+        textAlign: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        flexWrap: "nowrap",
+      }}
+    >
+      <div tw="flex items-center">
+        <div tw="flex max-h-30 items-center">
+          <img src={icon} tw="h-full" alt={app.name} />
         </div>
-        <div tw="absolute bottom-10 right-10 text-xl">buildwith.app</div>
+        <div tw="flex flex-col ml-4 mb-6">
+          <span tw="text-[5rem]">{app.name}</span>
+          <span tw="text-[2rem] text-zinc-600">{app.description}</span>
+        </div>
       </div>
-    ),
-    {
-      width: 1200,
-      height: 630,
-      fonts: [
-        {
-          name: "cal-sans",
-          data: new Uint8Array(calSansData).buffer,
-          style: "normal",
-        },
-      ],
-    }
+
+      <div tw="flex items-center justify-around w-[50%] mt-10">
+        <div tw="flex flex-col">
+          <span tw="text-xl font-sans text-zinc-600 mb-1">Built with</span>
+          <div tw="flex items-center">
+            <div tw="flex max-h-8 items-center">
+              <img src={fwLogo} tw="h-full" alt={fw.name} />
+            </div>
+            <span tw="text-3xl ml-2 mb-2">{fw.name}</span>
+          </div>
+        </div>
+
+        <div tw="flex flex-col">
+          <span tw="text-xl font-sans text-zinc-600 mb-1">Maker</span>
+          <div tw="flex items-center">
+            <div tw="flex max-h-10 items-center">
+              <img src={maker} tw="h-full rounded-full" alt={app.author.name} />
+            </div>
+            <span tw="text-2xl ml-2 mb-2">@{app.author.twitter}</span>
+          </div>
+        </div>
+      </div>
+
+      <div tw="flex flex-col w-[40%] mt-10 text-xl items-center">
+        <span>&quot;{app.highlight}&quot;</span>
+        <span tw="text-zinc-600">— {app.author.name}</span>
+      </div>
+    </div>
   );
 }
