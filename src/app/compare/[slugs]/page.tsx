@@ -35,14 +35,12 @@ export async function generateMetadata(props: Props) {
       title: `Compare ${fw1.name} vs ${fw2.name} • BuildWith.app`,
       description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
       url: `https://buildwith.app/compare/${props.params.slugs}`,
-      images: ["https://buildwith.app/og.png"],
     },
     twitter: {
       title: `Compare ${fw1.name} vs ${fw1.name} • BuildWith.app`,
       description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
       card: "summary_large_image",
       url: `https://buildwith.app/compare/${props.params.slugs}`,
-      images: ["https://buildwith.app/twitter.png"],
     },
   };
 }

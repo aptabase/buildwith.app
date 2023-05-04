@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { getFramework } from "@lib/frameworks";
 import { notFound } from "next/navigation";
-import { fetchFrameworkLogo, OpenGraphImage } from "@lib/og";
+import { fetchFrameworkLogo, fetchLocalImage, OpenGraphImage } from "@lib/og";
 import { getApp } from "@lib/apps";
 
 export const runtime = "edge";
@@ -18,24 +18,8 @@ export default async function handler(props: Props) {
   const fw = getFramework(app.framework);
   if (!fw) return notFound();
 
-  const icon = await fetch(
-    new URL(
-      app.icon_url,
-      process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : "http://localhost:3000/"
-    )
-  ).then((x) => x.arrayBuffer());
-
-  const maker = await fetch(
-    new URL(
-      app.author.profile_img,
-      process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : "http://localhost:3000/"
-    )
-  ).then((x) => x.arrayBuffer());
-
+  const icon = await fetchLocalImage(app.icon_url);
+  const maker = await fetchLocalImage(app.author.profile_img);
   const fwLogo = await fetchFrameworkLogo(fw.slug);
 
   return await OpenGraphImage(

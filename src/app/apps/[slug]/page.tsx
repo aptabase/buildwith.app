@@ -31,14 +31,12 @@ export async function generateMetadata(props: Props) {
       title: `${app.name} by ${app.author.name} • Built with ${fw.name} • BuildWith.app`,
       description: `Interview with ${app.name} creator ${app.author.name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
       url: `https://buildwith.app/apps/${app.slug}`,
-      images: ["https://buildwith.app/og.png"],
     },
     twitter: {
       title: `${app.name} by ${app.author.name} • Built with ${fw.name} • BuildWith.app`,
       description: `Interview with ${app.name} creator ${app.author.name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
       card: "summary_large_image",
       url: `https://buildwith.app/apps/${app.slug}`,
-      images: ["https://buildwith.app/twitter.png"],
     },
   };
 }
