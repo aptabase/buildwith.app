@@ -2,14 +2,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { getFramework } from "@lib/frameworks";
 import { ImageResponse } from "next/server";
-import { readFile } from "fs/promises";
-import path from "path";
-import { fileURLToPath } from "url";
 import { notFound } from "next/navigation";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
 type Props = {
   params: { slug: string };
@@ -30,9 +25,9 @@ export default async function handler(props: Props) {
   const calSansData = await calSans;
   const bgData = await bg;
 
-  const logoData = await readFile(
-    path.join(fileURLToPath(import.meta.url), `./${props.params.slug}.png`)
-  );
+  const logoData = await fetch(
+    `https://buildwith.app/frameworks/${fw.slug}.png`
+  ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
     (
