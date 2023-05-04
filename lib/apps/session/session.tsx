@@ -55,22 +55,22 @@ export const session: App = {
     {
       question: "Why did you build Session? How did you come up with the idea?",
       answer: (
-        <p>
-          There are two reasons why I made Session: First, It&apos;s to solve my
-          own problem:
-          <ul>
-            <li>
-              I don&apos;t have a boss (work as a contractor), so I have to
-              motivate myself every day by eliminating distracting websites and
-              I want to know how long I&apos;ve worked on today.
-            </li>
-            <li>
-              Second, I used to work on making web applications, wanted to learn
-              and make a native application (Mac and iOS), so initially, it was
-              a side project for me.
-            </li>
-          </ul>
-        </p>
+        <>
+          <p>
+            There are two reasons why I made Session: First, It&apos;s to solve
+            my own problem:
+          </p>
+          <p>
+            I don&apos;t have a boss (work as a contractor), so I have to
+            motivate myself every day by eliminating distracting websites and I
+            want to know how long I&apos;ve worked on today.
+          </p>
+          <p>
+            Second, I used to work on making web applications, wanted to learn
+            and make a native application (Mac and iOS), so initially, it was a
+            side project for me.
+          </p>
+        </>
       ),
     },
     {
