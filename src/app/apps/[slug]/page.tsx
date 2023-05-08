@@ -26,7 +26,7 @@ export async function generateMetadata(props: Props) {
 
   const by =
     app.makers.length === 1
-      ? `@${app.makers[0].name}`
+      ? `@${app.makers[0].twitter}`
       : `${app.makers.length} indie makers`;
 
   return {
