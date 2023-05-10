@@ -75,7 +75,7 @@ I could either jump straight in and code with what I know or learn new framework
 
 I also believe that with proper layers of abstraction on top of the original Electron API, such as:
 - declarative multi-window management
-- type-safe main<>renderer communication with minimal boilerplate
+- type-safe main <> renderer communication with minimal boilerplate
 - solid tooling and automated dev env
 
 Electron is a really capable tool.
@@ -85,11 +85,11 @@ Many people think apps made with Electron are ugly and slow. I'd say it's way ea
     {
       question:
         "What do you dislike about Electron? Would you choose a different framework if you had to start over?",
-      answer: `Overall I like it, and I'd probably pick it again. I'd probably consider Tauri (again), but it doesn't seem to be 10x better to justify the cost and risk of migrating amazing internal libs I have and learning new technology)
+      answer: `Overall I like it, and I'd probably pick it again. I'd probably consider Tauri (again), but it doesn't seem to be 10x better to justify the cost and risk of migrating amazing internal libs I have and learning a new technology.
 
 The main thing I don't like about Electron (though I bet it'd be the same with every framework) is that if something "deep" doesn't work, there's not much you can do. For example - macOS has system-level webcam portrait mode, but nope - it doesn't work with Electron, you get raw camera pictures. I did hit the wall with my head for too many hours about it and, in the end, was not able to solve it.
 
-There are other, minor things like the app size, but I don't think we had one user complaining about it.`,
+There are other minor things like the app size, but I don't think we had one user complaining about it.`,
     },
   ],
 };
