@@ -17,7 +17,7 @@ export function CompareWith(props: Props) {
     <Link
       href={href}
       key={props.fw2.slug}
-      className="p-2 rounded inline-flex items-center space-x-1 hover:bg-zinc-100"
+      className="p-2 rounded inline-flex items-center space-x-3 hover:bg-zinc-100"
     >
       <img
         alt={props.fw2.name}
