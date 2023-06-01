@@ -98,7 +98,7 @@ export default function Framework(props: Props) {
                 <h3>Apps built with {fw.name}</h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4">
                   {apps
-                    .filter((app) => app.framework == fw.slug)
+                    .filter((app) => app.framework.includes(fw.slug))
                     .map((app) => (
                       <AppCard key={app.slug} app={app} />
                     ))}

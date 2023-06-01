@@ -13,7 +13,7 @@ export const screenstudio: App = {
   screenshot_url: screenshot.src,
   initial_release: "December 2022",
   published_at: "May 2023",
-  framework: "electron",
+  framework: ["electron"],
   website: "https://www.screen.studio",
   stores: {
     website: "https://www.screen.studio/download",

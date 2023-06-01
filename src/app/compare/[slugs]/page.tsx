@@ -142,7 +142,7 @@ const ProsCons = ({
 const AppsBuiltWith = ({ fw }: { fw: Framework }) => (
   <div className="grid grid-cols-1">
     {apps
-      .filter((app) => app.framework == fw.slug)
+      .filter((app) => app.framework.includes(fw.slug))
       .map((app) => (
         <AppCard key={app.slug} app={app} />
       ))}

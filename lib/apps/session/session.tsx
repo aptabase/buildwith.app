@@ -11,7 +11,7 @@ export const session: App = {
   screenshot_url: screenshot.src,
   initial_release: "August 2022",
   published_at: "May 2023",
-  framework: "apple",
+  framework: ["apple"],
   website: "https://stayinsession.com/",
   stores: {
     app_store: "https://apps.apple.com/us/app/session-focus-timer/id1521432881",

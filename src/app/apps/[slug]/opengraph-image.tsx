@@ -1,9 +1,9 @@
-// @ts-nocheck
 /* eslint-disable @next/next/no-img-element */
-import { getFramework } from "@lib/frameworks";
+import { getFrameworks } from "@lib/frameworks";
 import { notFound } from "next/navigation";
 import { fetchFrameworkLogo, fetchLocalImage, OpenGraphImage } from "@lib/og";
-import { getApp, App } from "@lib/apps";
+import { getApp } from "@lib/apps";
+import { FileWatcherEventKind } from "typescript";
 
 export const runtime = "edge";
 
@@ -11,9 +11,50 @@ type Props = {
   params: { slug: string };
 };
 
+type FrameworkProfile = {
+  name: string;
+  logo: ArrayBuffer;
+};
+
 type MakerProfile = {
   twitter: string;
   avatar: ArrayBuffer;
+};
+
+const SingleFramework = ({ framework }: { framework: FrameworkProfile }) => {
+  return (
+    <div tw="flex items-center">
+      <div tw="flex max-h-10 items-center">
+        <img
+          src={framework.logo as unknown as string}
+          tw="h-full"
+          alt={framework.name}
+        />
+      </div>
+      <span tw="text-4xl ml-2 mb-2">{framework.name}</span>
+    </div>
+  );
+};
+
+const MultipleFrameworks = ({
+  frameworks,
+}: {
+  frameworks: FrameworkProfile[];
+}) => {
+  return (
+    <div tw="flex items-center">
+      <div tw="flex max-h-10 items-center">
+        {frameworks.map((fw) => (
+          <img
+            key={fw.name}
+            src={fw.logo as unknown as string}
+            tw="w-10 mr-2"
+            alt={fw.name}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const SingleMaker = ({ maker }: { maker: MakerProfile }) => {
@@ -23,7 +64,7 @@ const SingleMaker = ({ maker }: { maker: MakerProfile }) => {
       <div tw="flex items-center">
         <div tw="flex max-h-12 items-center">
           <img
-            src={maker.avatar}
+            src={maker.avatar as unknown as string}
             tw="h-full rounded-full"
             alt={maker.twitter}
           />
@@ -42,7 +83,7 @@ const MultipleMakers = ({ makers }: { makers: MakerProfile[] }) => {
         {makers.map((maker) => (
           <div tw="flex max-h-12 items-center mr-2" key={maker.twitter}>
             <img
-              src={maker.avatar}
+              src={maker.avatar as unknown as string}
               tw="h-full rounded-full"
               alt={maker.twitter}
             />
@@ -57,11 +98,18 @@ export default async function handler(props: Props) {
   const app = getApp(props.params.slug);
   if (!app) return notFound();
 
-  const fw = getFramework(app.framework);
-  if (!fw) return notFound();
+  const fws = getFrameworks(app.framework);
+  if (fws.length === 0) return notFound();
 
   const icon = await fetchLocalImage(app.icon_url);
-  const fwLogo = await fetchFrameworkLogo(fw.slug);
+
+  const frameworks: FrameworkProfile[] = await Promise.all(
+    fws.map(async (fw) => ({
+      name: fw.name,
+      logo: await fetchFrameworkLogo(fw.slug),
+    }))
+  );
+
   const makers: MakerProfile[] = await Promise.all(
     app.makers.map(async (m) => ({
       twitter: m.twitter,
@@ -86,7 +134,11 @@ export default async function handler(props: Props) {
     >
       <div tw="flex items-center">
         <div tw="flex max-h-40 items-center">
-          <img src={icon} tw="h-full" alt={app.name} />
+          <img
+            src={icon as unknown as string}
+            tw="h-full rounded-lg"
+            alt={app.name}
+          />
         </div>
         <div tw="flex flex-col ml-8 mb-6">
           <span tw="text-[6rem]">{app.name}</span>
@@ -97,12 +149,11 @@ export default async function handler(props: Props) {
       <div tw="flex items-center justify-around w-[50%] mt-10">
         <div tw="flex flex-col">
           <span tw="text-2xl font-sans text-zinc-600 mb-1">Built with</span>
-          <div tw="flex items-center">
-            <div tw="flex max-h-12 items-center">
-              <img src={fwLogo} tw="h-full" alt={fw.name} />
-            </div>
-            <span tw="text-4xl ml-2 mb-2">{fw.name}</span>
-          </div>
+          {frameworks.length === 1 ? (
+            <SingleFramework framework={frameworks[0]} />
+          ) : (
+            <MultipleFrameworks frameworks={frameworks} />
+          )}
         </div>
 
         {makers.length === 1 ? (

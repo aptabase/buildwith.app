@@ -11,7 +11,7 @@ export const aptakube: App = {
   screenshot_url: screenshot.src,
   initial_release: "January 2023",
   published_at: "April 2023",
-  framework: "tauri",
+  framework: ["tauri"],
   website: "https://aptakube.com",
   makers: [
     {

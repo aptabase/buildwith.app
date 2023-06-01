@@ -11,7 +11,7 @@ export const habitkit: App = {
   screenshot_url: screenshot.src,
   initial_release: "November 2022",
   published_at: "April 2023",
-  framework: "flutter",
+  framework: ["flutter"],
   website: "https://www.habitkit.app/",
   stores: {
     google_play:

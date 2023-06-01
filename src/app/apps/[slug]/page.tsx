@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { apps, getApp } from "@lib/apps";
 import ReactMarkdown from "react-markdown";
-import { getFramework } from "@lib/frameworks";
+import { getFrameworks } from "@lib/frameworks";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppInfoPanel } from "./AppInfoPanel";
@@ -21,25 +21,27 @@ export async function generateMetadata(props: Props) {
   const app = getApp(props.params.slug);
   if (!app) return;
 
-  const fw = getFramework(app.framework);
-  if (!fw) return;
+  const fws = getFrameworks(app.framework);
+  if (fws.length === 0) return notFound();
 
   const by =
     app.makers.length === 1
       ? `@${app.makers[0].twitter}`
       : `${app.makers.length} indie makers`;
 
+  const fwNames = fws.map((x) => x.name).join(" and ");
+
   return {
-    title: `${app.name} by ${by} • Built with ${fw.name} • BuildWith.app`,
-    description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+    title: `${app.name} by ${by} • Built with ${fwNames} • BuildWith.app`,
+    description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fwNames} and the reasons why.`,
     openGraph: {
-      title: `${app.name} by ${by} • Built with ${fw.name} • BuildWith.app`,
-      description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+      title: `${app.name} by ${by} • Built with ${fwNames} • BuildWith.app`,
+      description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fwNames} and the reasons why.`,
       url: `https://buildwith.app/apps/${app.slug}`,
     },
     twitter: {
-      title: `${app.name} by ${by} • Built with ${fw.name} • BuildWith.app`,
-      description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fw.name} and why they chose to build with ${fw.name}.`,
+      title: `${app.name} by ${by} • Built with ${fwNames} • BuildWith.app`,
+      description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fwNames} and the reasons why.`,
       card: "summary_large_image",
       url: `https://buildwith.app/apps/${app.slug}`,
     },
@@ -50,8 +52,8 @@ export default function App(props: Props) {
   const app = getApp(props.params.slug);
   if (!app) return notFound();
 
-  const fw = getFramework(app.framework);
-  if (!fw) return notFound();
+  const fws = getFrameworks(app.framework);
+  if (fws.length === 0) return notFound();
 
   return (
     <main>
@@ -60,7 +62,7 @@ export default function App(props: Props) {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Link
-                href={fw.slug}
+                href={fws[0].slug}
                 className="text-sm mb-4 inline-block hover:bg-zinc-50 px-2 py-1 rounded"
               >
                 ← Back
@@ -92,7 +94,7 @@ export default function App(props: Props) {
                 src={app.screenshot_url}
               />
               <div className="md:flex justify-between gap-12 pt-12">
-                <AppInfoPanel app={app} framework={fw} />
+                <AppInfoPanel app={app} frameworks={fws} />
                 <ul className="space-y-12 order-1">
                   <blockquote className="flex flex-col text-3xl bg-zinc-50 p-4 rounded">
                     <span className="italic">&quot;{app.highlight}&quot;</span>

@@ -4,6 +4,7 @@ export * from "./RedditTag";
 export * from "./DiscordTag";
 export * from "./Footer";
 export * from "./GooglePlay";
+export * from "./MicrosoftStore";
 export * from "./AppStore";
 export * from "./Setapp";
 export * from "./AppCard";

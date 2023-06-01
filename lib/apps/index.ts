@@ -1,4 +1,5 @@
 import { aptakube } from "./aptakube/aptakube";
+import { auraai } from "./auraai/auraai";
 import { habitkit } from "./habitkit/habitkit";
 import { screenstudio } from "./screenstudio/screenstudio";
 import { session } from "./session/session";
@@ -12,11 +13,12 @@ export type App = {
   website: string;
   icon_url: string;
   screenshot_url: string;
-  framework: string;
+  framework: string[];
   makers: Array<{ name: string; twitter: string; profile_img: string }>;
   stores?: {
     google_play?: string;
     app_store?: string;
+    microsoft_store?: string;
     setapp?: string;
     website?: string;
   };
@@ -24,7 +26,7 @@ export type App = {
   interview: Array<{ question: string; answer: string }>;
 };
 
-export const apps = [aptakube, habitkit, session, screenstudio];
+export const apps = [aptakube, habitkit, session, screenstudio, auraai];
 
 export const getApp = (slug: string): App | undefined => {
   return apps.find((app) => app.slug === slug);

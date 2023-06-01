@@ -7,7 +7,7 @@ import { DownloadButtons } from "./DownloadButtons";
 
 type Props = {
   app: App;
-  framework: Framework;
+  frameworks: Framework[];
 };
 
 export function AppInfoPanel(props: Props) {
@@ -15,21 +15,24 @@ export function AppInfoPanel(props: Props) {
     <ul className="grid grid-cols-2 gap-6 text-sm order-2 mb-12 md:mb-0 md:block md:space-y-6 min-w-[14rem]">
       <li className="space-y-1">
         <p className="text-zinc-600">Built with</p>
-        <Link
-          href={`/${props.framework.slug}`}
-          className="flex items-center space-x-1"
-        >
-          <img
-            alt={props.framework.name}
-            loading="lazy"
-            decoding="async"
-            className="h-6 w-6 rounded"
-            src={`/frameworks/${props.framework.slug}.svg`}
-          />
-          <span className="text-lg font-title tracking-tight text-zinc-800">
-            {props.framework.name}
-          </span>
-        </Link>
+        {props.frameworks.map((fw) => (
+          <Link
+            key={fw.slug}
+            href={`/${fw.slug}`}
+            className="flex items-center space-x-1"
+          >
+            <img
+              alt={fw.name}
+              loading="lazy"
+              decoding="async"
+              className="h-6 w-6 rounded"
+              src={`/frameworks/${fw.slug}.svg`}
+            />
+            <span className="text-lg font-title tracking-tight text-zinc-800">
+              {fw.name}
+            </span>
+          </Link>
+        ))}
       </li>
       <li className="space-y-1">
         <p className="text-zinc-600">
