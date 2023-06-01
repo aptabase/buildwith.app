@@ -75,3 +75,7 @@ export const platforms = Array.from(
 export function getFramework(slug: string): Framework | undefined {
   return frameworks.find((framework) => framework.slug === slug);
 }
+
+export function getFrameworks(slugs: string[]): Framework[] {
+  return slugs.map((slug) => getFramework(slug)).filter(Boolean) as Framework[];
+}
