@@ -1,6 +1,7 @@
 import { aptakube } from "./aptakube/aptakube";
 import { auraai } from "./auraai/auraai";
 import { habitkit } from "./habitkit/habitkit";
+import { lifeprogress } from "./lifeprogress/lifeprogress";
 import { screenstudio } from "./screenstudio/screenstudio";
 import { session } from "./session/session";
 
@@ -26,7 +27,14 @@ export type App = {
   interview: Array<{ question: string; answer: string }>;
 };
 
-export const apps = [aptakube, habitkit, session, screenstudio, auraai];
+export const apps = [
+  aptakube,
+  habitkit,
+  session,
+  screenstudio,
+  auraai,
+  lifeprogress,
+];
 
 export const getApp = (slug: string): App | undefined => {
   return apps.find((app) => app.slug === slug);
