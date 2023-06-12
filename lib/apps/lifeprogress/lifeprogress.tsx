@@ -71,7 +71,8 @@ iOS:
 - Downloads: 170
 - Earnings: $5.25 (my very first as an indie developer)
 - Top countries for downloads: USA, Poland, UK
-- iPad downloads: 5.3% of users`,
+- iPad downloads: 5.3% of users
+- The app size is also super small: 6MB`,
     },
     {
       question:
