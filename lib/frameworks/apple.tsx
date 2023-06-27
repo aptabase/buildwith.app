@@ -67,10 +67,6 @@ export const apple: Framework = {
     href: "https://reddit.com/r/iOSdev",
     members: 125_000,
   },
-  twitter: {
-    slug: "AndroidDev",
-    followers: 2_200_000,
-  },
   discord: {
     name: "iOS Development",
     href: "https://discord.com/invite/vVNXQZT",
