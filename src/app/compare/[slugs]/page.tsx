@@ -140,7 +140,7 @@ const ProsCons = ({
 );
 
 const AppsBuiltWith = ({ fw }: { fw: Framework }) => (
-  <div className="grid grid-cols-1">
+  <div className="grid grid-cols-1 gap-2">
     {apps
       .filter((app) => app.framework.includes(fw.slug))
       .map((app) => (

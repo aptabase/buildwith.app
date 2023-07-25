@@ -1,5 +1,6 @@
 import { aptakube } from "./aptakube/aptakube";
 import { auraai } from "./auraai/auraai";
+import { avocation } from "./avocation/avocation";
 import { habitkit } from "./habitkit/habitkit";
 import { lifeprogress } from "./lifeprogress/lifeprogress";
 import { screenstudio } from "./screenstudio/screenstudio";
@@ -34,6 +35,7 @@ export const apps = [
   screenstudio,
   auraai,
   lifeprogress,
+  avocation,
 ];
 
 export const getApp = (slug: string): App | undefined => {

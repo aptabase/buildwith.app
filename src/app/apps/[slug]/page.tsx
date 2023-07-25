@@ -62,7 +62,7 @@ export default function App(props: Props) {
           <div className="relative px-4 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <Link
-                href={fws[0].slug}
+                href={`/${fws[0].slug}`}
                 className="text-sm mb-4 inline-block hover:bg-zinc-50 px-2 py-1 rounded"
               >
                 ← Back

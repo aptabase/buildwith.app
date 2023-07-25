@@ -15,7 +15,7 @@ export function AppCard(props: Props) {
   return (
     <Link
       href={`/apps/${props.app.slug}`}
-      className="rounded flex hover:bg-zinc-100"
+      className="rounded flex hover:bg-zinc-100 h-auto"
     >
       <img
         alt={props.app.name}
