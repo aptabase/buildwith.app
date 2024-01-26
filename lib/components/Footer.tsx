@@ -43,7 +43,10 @@ export function Footer() {
         </div>
         <p className="mt-4 text-center text-sm leading-5 text-gray-500">
           Sponsored by{" "}
-          <ExternalLink href="https://aptabase.com/?utm_source=buildwith.app&utm_campaign=footer">
+          <ExternalLink
+            href="https://aptabase.com/?utm_source=buildwith.app&utm_campaign=footer"
+            rel="nofollow"
+          >
             Aptabase
           </ExternalLink>{" "}
         </p>
