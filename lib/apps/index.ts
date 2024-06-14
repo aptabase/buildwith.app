@@ -5,6 +5,7 @@ import { habitkit } from "./habitkit/habitkit";
 import { lifeprogress } from "./lifeprogress/lifeprogress";
 import { screenstudio } from "./screenstudio/screenstudio";
 import { session } from "./session/session";
+import { uly } from "./uly/uly";
 
 export type App = {
   slug: string;
@@ -36,6 +37,7 @@ export const apps = [
   auraai,
   lifeprogress,
   avocation,
+  uly,
 ];
 
 export const getApp = (slug: string): App | undefined => {
