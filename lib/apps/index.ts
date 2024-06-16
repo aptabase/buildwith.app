@@ -6,6 +6,7 @@ import { lifeprogress } from "./lifeprogress/lifeprogress";
 import { screenstudio } from "./screenstudio/screenstudio";
 import { session } from "./session/session";
 import { uly } from "./uly/uly";
+import { worldflags } from "./worldflags/worldflags";
 
 export type App = {
   slug: string;
@@ -38,6 +39,7 @@ export const apps = [
   lifeprogress,
   avocation,
   uly,
+  worldflags
 ];
 
 export const getApp = (slug: string): App | undefined => {
