@@ -7,6 +7,7 @@ import { screenstudio } from "./screenstudio/screenstudio";
 import { session } from "./session/session";
 import { uly } from "./uly/uly";
 import { worldflags } from "./worldflags/worldflags";
+import { wayther } from "./wayther/wayther";
 
 export type App = {
   slug: string;
@@ -39,7 +40,8 @@ export const apps = [
   lifeprogress,
   avocation,
   uly,
-  worldflags
+  worldflags,
+  wayther
 ];
 
 export const getApp = (slug: string): App | undefined => {
