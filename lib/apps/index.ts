@@ -9,6 +9,7 @@ import { uly } from "./uly/uly";
 import { worldflags } from "./worldflags/worldflags";
 import { wayther } from "./wayther/wayther";
 import { dribble } from "./dribble/dribble";
+import { thrivo } from "./thrivo/thrivo";
 
 export type App = {
   slug: string;
@@ -43,7 +44,8 @@ export const apps = [
   uly,
   worldflags,
   wayther,
-  dribble
+  dribble,
+  thrivo
 ];
 
 export const getApp = (slug: string): App | undefined => {
