@@ -8,6 +8,7 @@ import { session } from "./session/session";
 import { uly } from "./uly/uly";
 import { worldflags } from "./worldflags/worldflags";
 import { wayther } from "./wayther/wayther";
+import { dribble } from "./dribble/dribble";
 
 export type App = {
   slug: string;
@@ -41,7 +42,8 @@ export const apps = [
   avocation,
   uly,
   worldflags,
-  wayther
+  wayther,
+  dribble
 ];
 
 export const getApp = (slug: string): App | undefined => {
