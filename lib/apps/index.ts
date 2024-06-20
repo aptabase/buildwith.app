@@ -10,6 +10,7 @@ import { worldflags } from "./worldflags/worldflags";
 import { wayther } from "./wayther/wayther";
 import { dribble } from "./dribble/dribble";
 import { thrivo } from "./thrivo/thrivo";
+import { rise } from "./rise/rise";
 
 export type App = {
   slug: string;
@@ -45,7 +46,8 @@ export const apps = [
   worldflags,
   wayther,
   dribble,
-  thrivo
+  thrivo,
+  rise
 ];
 
 export const getApp = (slug: string): App | undefined => {
