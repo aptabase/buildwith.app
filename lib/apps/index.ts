@@ -11,6 +11,7 @@ import { wayther } from "./wayther/wayther";
 import { dribble } from "./dribble/dribble";
 import { thrivo } from "./thrivo/thrivo";
 import { rise } from "./rise/rise";
+import { compressx } from "./compressx/compressx";
 
 export type App = {
   slug: string;
@@ -47,7 +48,8 @@ export const apps = [
   wayther,
   dribble,
   thrivo,
-  rise
+  rise,
+  compressx
 ];
 
 export const getApp = (slug: string): App | undefined => {

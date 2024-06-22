@@ -10,7 +10,7 @@ export const dribble: App = {
   description: "Prove your basketball knowledge in a variety of fun and challenging trivia games",
   icon_url: icon.src,
   screenshot_url: screenshot.src,
-  initial_release: "June 2024",
+  initial_release: "March 2023",
   published_at: "June 2024",
   framework: ["flutter"],
   website: "https://dribblegame.com/",
