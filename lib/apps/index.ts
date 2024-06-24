@@ -13,6 +13,7 @@ import { thrivo } from "./thrivo/thrivo";
 import { rise } from "./rise/rise";
 import { compressx } from "./compressx/compressx";
 import { whats } from "./whats/whats";
+import { atomic } from "./atomic/atomic";
 
 export type App = {
   slug: string;
@@ -51,7 +52,8 @@ export const apps = [
   thrivo,
   rise,
   compressx,
-  whats
+  whats,
+  atomic
 ];
 
 export const getApp = (slug: string): App | undefined => {
