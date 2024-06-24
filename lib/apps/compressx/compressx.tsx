@@ -1,6 +1,6 @@
 import { App } from "..";
-import icon from "./compressx-icon.png";
-import screenshot from "./compressx-ss.png";
+import icon from "./compressx-icon.jpg";
+import screenshot from "./compressx-ss.jpg";
 import profile from "./hieu.jpg";
 
 export const compressx: App = {

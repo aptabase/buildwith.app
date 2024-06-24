@@ -1,5 +1,5 @@
 import { App } from "..";
-import icon from "./whats-icon.png";
+import icon from "./whats-icon.jpg";
 import screenshot from "./whats-ss.jpg";
 import profile from "./fabian.jpg";
 
