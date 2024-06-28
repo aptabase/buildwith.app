@@ -14,6 +14,7 @@ import { rise } from "./rise/rise";
 import { compressx } from "./compressx/compressx";
 import { whats } from "./whats/whats";
 import { atomic } from "./atomic/atomic";
+import { roadsaudio } from "./roadsaudio/roadsaudio";
 
 export type App = {
   slug: string;
@@ -53,7 +54,8 @@ export const apps = [
   rise,
   compressx,
   whats,
-  atomic
+  atomic,
+  roadsaudio,
 ];
 
 export const getApp = (slug: string): App | undefined => {
