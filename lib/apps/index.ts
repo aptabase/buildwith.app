@@ -15,6 +15,7 @@ import { compressx } from "./compressx/compressx";
 import { whats } from "./whats/whats";
 import { atomic } from "./atomic/atomic";
 import { roadsaudio } from "./roadsaudio/roadsaudio";
+import { payload } from "./payload/payload";
 
 export type App = {
   slug: string;
@@ -26,7 +27,7 @@ export type App = {
   icon_url: string;
   screenshot_url: string;
   framework: string[];
-  makers: Array<{ name: string; twitter: string; profile_img: string }>;
+  makers: Array<{ name: string; twitter?: string; profile_img: string; github?: string; }>;
   stores?: {
     google_play?: string;
     app_store?: string;
@@ -56,6 +57,7 @@ export const apps = [
   whats,
   atomic,
   roadsaudio,
+  payload,
 ];
 
 export const getApp = (slug: string): App | undefined => {

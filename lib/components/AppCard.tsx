@@ -9,7 +9,7 @@ type Props = {
 export function AppCard(props: Props) {
   const by =
     props.app.makers.length === 1
-      ? `by @${props.app.makers[0].twitter}`
+      ? `by @${props.app.makers[0].twitter || props.app.makers[0].github}`
       : `by ${props.app.makers.length} indie makers`;
 
   return (

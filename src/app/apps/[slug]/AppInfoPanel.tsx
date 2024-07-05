@@ -40,7 +40,7 @@ export function AppInfoPanel(props: Props) {
         </p>
         <ul className="space-y-2">
           {props.app.makers.map((maker) => (
-            <li key={maker.twitter} className="flex space-x-2">
+            <li key={maker.twitter || maker.github} className="flex space-x-2">
               <img
                 alt={maker.name}
                 loading="lazy"
@@ -50,10 +50,25 @@ export function AppInfoPanel(props: Props) {
               />
               <div>
                 <p className="font-medium">{maker.name}</p>
-                <ExternalLink href={`https://twitter.com/${maker.twitter}`}>
-                  @{maker.twitter}
-                </ExternalLink>
-              </div>
+                {(() => {
+                  switch (true) {
+                    case !!maker.twitter:
+                      return (
+                        <ExternalLink href={`https://twitter.com/${maker.twitter}`}>
+                          @{maker.twitter}
+                        </ExternalLink>
+                      );
+                    case !!maker.github:
+                      return (
+                        <ExternalLink href={`https://github.com/${maker.github}`}>
+                          @{maker.github}
+                        </ExternalLink>
+                      );
+                    default:
+                      return <span></span>;
+                  }
+                })()}
+            </div>
             </li>
           ))}
         </ul>

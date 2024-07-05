@@ -17,7 +17,8 @@ type FrameworkProfile = {
 };
 
 type MakerProfile = {
-  twitter: string;
+  twitter?: string;
+  github?: string;
   avatar: ArrayBuffer;
 };
 
@@ -66,10 +67,10 @@ const SingleMaker = ({ maker }: { maker: MakerProfile }) => {
           <img
             src={maker.avatar as unknown as string}
             tw="h-full rounded-full"
-            alt={maker.twitter}
+            alt={maker.twitter || maker.github}
           />
         </div>
-        <span tw="text-4xl ml-2 mb-2">@{maker.twitter}</span>
+        <span tw="text-4xl ml-2 mb-2">@{maker.twitter || maker.github}</span>
       </div>
     </div>
   );
@@ -81,11 +82,11 @@ const MultipleMakers = ({ makers }: { makers: MakerProfile[] }) => {
       <span tw="text-2xl font-sans text-zinc-600 mb-1">Makers</span>
       <div tw="flex items-center">
         {makers.map((maker) => (
-          <div tw="flex max-h-12 items-center mr-2" key={maker.twitter}>
+          <div tw="flex max-h-12 items-center mr-2" key={maker.twitter || maker.github}>
             <img
               src={maker.avatar as unknown as string}
               tw="h-full rounded-full"
-              alt={maker.twitter}
+              alt={maker.twitter || maker.github}
             />
           </div>
         ))}
@@ -113,6 +114,7 @@ export default async function handler(props: Props) {
   const makers: MakerProfile[] = await Promise.all(
     app.makers.map(async (m) => ({
       twitter: m.twitter,
+      github: m.github,
       avatar: await fetchLocalImage(m.profile_img),
     }))
   );
