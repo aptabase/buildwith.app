@@ -26,7 +26,7 @@ export async function generateMetadata(props: Props) {
   const [slug1, slug2] = props.params.slugs.split("-vs-");
   const fw1 = getFramework(slug1);
   const fw2 = getFramework(slug2);
-  if (!fw1 || !fw2) return;
+  if (!fw1 || !fw2) return notFound();
 
   return {
     title: `Compare ${fw1.name} vs ${fw2.name} • BuildWith.app`,
@@ -40,7 +40,6 @@ export async function generateMetadata(props: Props) {
       title: `Compare ${fw1.name} vs ${fw1.name} • BuildWith.app`,
       description: `How does ${fw1.name} compare to ${fw2.name}? See the pros and cons of each framework, target platforms and more.`,
       card: "summary_large_image",
-      url: `https://buildwith.app/compare/${props.params.slugs}`,
     },
   };
 }

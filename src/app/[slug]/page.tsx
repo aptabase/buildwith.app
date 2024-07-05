@@ -20,7 +20,7 @@ type Props = {
 
 export async function generateMetadata(props: Props) {
   const fw = getFramework(props.params.slug);
-  if (!fw) return;
+  if (!fw) return notFound();
 
   return {
     title: `${fw.name} • BuildWith.app`,
@@ -34,7 +34,6 @@ export async function generateMetadata(props: Props) {
       title: `${fw.name} • BuildWith.app`,
       description: `${fw.name}: ${fw.short_description}`,
       card: "summary_large_image",
-      url: `https://buildwith.app/${fw.slug}`,
     },
   };
 }

@@ -19,14 +19,14 @@ type Props = {
 
 export async function generateMetadata(props: Props) {
   const app = getApp(props.params.slug);
-  if (!app) return;
+  if (!app) return notFound();
 
   const fws = getFrameworks(app.framework);
   if (fws.length === 0) return notFound();
 
   const by =
     app.makers.length === 1
-      ? `@${app.makers[0].twitter}`
+      ? `@${app.makers[0].twitter || app.makers[0].github}`
       : `${app.makers.length} indie makers`;
 
   const fwNames = fws.map((x) => x.name).join(" and ");
@@ -43,7 +43,6 @@ export async function generateMetadata(props: Props) {
       title: `${app.name} by ${by} • Built with ${fwNames} • BuildWith.app`,
       description: `Interview with ${app.name} creator ${app.makers[0].name} about how they built their app with ${fwNames} and the reasons why.`,
       card: "summary_large_image",
-      url: `https://buildwith.app/apps/${app.slug}`,
     },
   };
 }
