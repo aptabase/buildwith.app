@@ -17,6 +17,7 @@ import { atomic } from "./atomic/atomic";
 import { roadsaudio } from "./roadsaudio/roadsaudio";
 import { payload } from "./payload/payload";
 import { clipbud } from "./clipbud/clipbud";
+import { gazooks } from "./gazooks/gazooks";
 
 export type App = {
   slug: string;
@@ -59,7 +60,8 @@ export const apps = [
   atomic,
   roadsaudio,
   payload,
-  clipbud
+  clipbud,
+  gazooks
 ];
 
 export const getApp = (slug: string): App | undefined => {
