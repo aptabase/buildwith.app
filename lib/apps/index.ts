@@ -19,6 +19,7 @@ import { payload } from "./payload/payload";
 import { clipbud } from "./clipbud/clipbud";
 import { gazooks } from "./gazooks/gazooks";
 import { yaak } from "./yaak/yaak";
+import { sip } from "./sip/sip";
 
 export type App = {
   slug: string;
@@ -63,7 +64,8 @@ export const apps = [
   payload,
   clipbud,
   gazooks,
-  yaak
+  yaak,
+  sip
 ];
 
 export const getApp = (slug: string): App | undefined => {
