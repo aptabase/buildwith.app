@@ -20,6 +20,7 @@ import { clipbud } from "./clipbud/clipbud";
 import { gazooks } from "./gazooks/gazooks";
 import { yaak } from "./yaak/yaak";
 import { sip } from "./sip/sip";
+import { catlists } from "./catlists/catlists";
 
 export type App = {
   slug: string;
@@ -65,7 +66,8 @@ export const apps = [
   clipbud,
   gazooks,
   yaak,
-  sip
+  sip,
+  catlists
 ];
 
 export const getApp = (slug: string): App | undefined => {
