@@ -71,7 +71,7 @@ export const capacitor: Framework = {
   },
   href: "https://capacitorjs.com",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
-  platforms: ["iOS", "Android"],
+  platforms: ["iOS", "Android", "Web"],
   reddit: {
     href: "https://reddit.com/r/capacitor",
     members: 498,
