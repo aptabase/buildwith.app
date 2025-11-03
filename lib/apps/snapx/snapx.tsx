@@ -1,7 +1,7 @@
 import { App } from "..";
 import icon from "./snapx-icon.png";
 import screenshot from "./snapx-ss.png";
-import brycen from "./brycen.png";
+import brycen from "./brycen.jpg";
 
 export const snapx: App = {
   slug: "snapx",
@@ -10,7 +10,7 @@ export const snapx: App = {
   icon_url: icon.src,
   screenshot_url: screenshot.src,
   initial_release: "under development",
-  published_at: "n/a",
+  published_at: "November 2025",
   framework: ["dotnetmaui"],
   website: "https://github.com/SnapXL/SnapX",
   stores: {
