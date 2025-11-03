@@ -21,6 +21,7 @@ import { gazooks } from "./gazooks/gazooks";
 import { yaak } from "./yaak/yaak";
 import { sip } from "./sip/sip";
 import { catlists } from "./catlists/catlists";
+import { snapx } from "./snapx/snapx";
 
 export type App = {
   slug: string;
@@ -67,7 +68,8 @@ export const apps = [
   gazooks,
   yaak,
   sip,
-  catlists
+  catlists,
+  snapx
 ];
 
 export const getApp = (slug: string): App | undefined => {
