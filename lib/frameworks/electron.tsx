@@ -82,19 +82,19 @@ export const electron: Framework = {
   platforms: ["Linux", "macOS", "Windows"],
   reddit: {
     href: "https://reddit.com/r/electronjs",
-    members: 7_400,
+    members: 13_000,
   },
   github: {
     href: "https://github.com/electron/electron",
-    stars: 107000,
+    stars: 120_000,
   },
   twitter: {
     slug: "electronjs",
-    followers: 36_300,
+    followers: 36_600,
   },
   discord: {
     name: "electronjs.org",
     href: "https://discord.com/invite/electronjs",
-    members: 14_391,
+    members: 22_087,
   },
 };

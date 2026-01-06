@@ -65,19 +65,19 @@ export const dotnetmaui: Framework = {
     first: "May 23, 2022",
   },
   href: "https://dotnet.microsoft.com/en-us/apps/maui",
-  platforms: ["iOS", "Android", "macOS", "Windows"],
-  languages: ["C#"],
+  platforms: ["iOS", "Android", "macOS", "Windows","Tizen","iPadOS"],
+  languages: ["C#", "XAML"],
   reddit: {
     href: "https://reddit.com/r/dotnetMAUI",
-    members: 3_100,
+    members: 9_800,
   },
   github: {
     href: "https://github.com/dotnet/maui",
-    stars: 18_800,
+    stars: 23_100,
   },
   discord: {
     name: "Xamarin & MAUI",
     href: "https://discord.com/invite/fB6yfFhrX9",
-    members: 797,
+    members: 852,
   },
 };

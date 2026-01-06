@@ -52,22 +52,22 @@ export const nativescript: Framework = {
   },
   href: "https://nativescript.org/",
   languages: ["JavaScript", "TypeScript"],
-  platforms: ["iOS", "Android"],
+  platforms: ["iOS", "Android","visionOS","iPadOS","watchOS","Android TV"],
   reddit: {
     href: "https://reddit.com/r/nativescript",
-    members: 2_000,
+    members: 2_200,
   },
   github: {
     href: "https://github.com/NativeScript/NativeScript",
-    stars: 22_400,
+    stars: 25_400,
   },
   twitter: {
     slug: "nativescript",
-    followers: 70_700,
+    followers: 70_000,
   },
   discord: {
     name: "NativeScript",
     href: "https://discord.com/invite/RgmpGky9GR",
-    members: 4_246,
+    members: 5_773,
   },
 };

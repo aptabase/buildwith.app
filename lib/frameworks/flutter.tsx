@@ -81,22 +81,22 @@ export const flutter: Framework = {
   },
   href: "https://flutter.dev/",
   languages: ["Dart"],
-  platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
+  platforms: ["Linux", "macOS", "Windows", "iOS", "Android","iPadOS", "Web", "Android TV"],
   reddit: {
     href: "https://reddit.com/r/FlutterDev",
-    members: 107_000,
+    members: 168_900,
   },
   github: {
     href: "https://github.com/flutter/flutter",
-    stars: 152000,
+    stars: 175_000,
   },
   twitter: {
     slug: "FlutterDev",
-    followers: 229_600,
+    followers: 274_200,
   },
   discord: {
     name: "/r/FlutterDev",
     href: "https://discord.com/invite/N7Yshp4",
-    members: 52_853,
+    members: 73_006,
   },
 };
