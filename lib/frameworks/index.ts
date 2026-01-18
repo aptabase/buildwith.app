@@ -18,17 +18,30 @@ export type Framework = {
   releases: {
     first: string;
   };
-  pros: Array<{
+  pros: {
     title: string;
     description: string;
-  }>;
-  cons: Array<{
+  }[];
+  cons: {
     title: string;
     description: string;
-  }>;
+  }[];
   href: string;
   languages: string[];
-  platforms: string[];
+  platforms: (
+    | "Android"
+    | "Android Auto"
+    | "Android TV"
+    | "iOS"
+    | "Linux"
+    | "macOS"
+    | "tvOS"
+    | "watchOS"
+    | "Wear Os"
+    | "Web"
+    | "Windows"
+    | string
+  )[];
   reddit: {
     href: string;
     members: number;
