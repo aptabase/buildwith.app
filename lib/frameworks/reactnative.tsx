@@ -65,22 +65,22 @@ export const reactnative: Framework = {
   },
   href: "https://reactnative.dev",
   languages: ["JavaScript", "TypeScript"],
-  platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android"],
+  platforms: ["tvOS", "Android TV", "macOS", "Windows", "iOS", "Android","iPadOS","visionOS","Web",],
   reddit: {
     href: "https://reddit.com/r/reactnative",
-    members: 103_000,
+    members: 173_600,
   },
   github: {
     href: "https://github.com/facebook/react-native",
-    stars: 109000,
+    stars: 125_000,
   },
   twitter: {
     slug: "reactnative",
-    followers: 174_900,
+    followers: 236_400,
   },
   discord: {
     name: "Expo Developers",
     href: "https://discord.com/invite/TercuSpcC7",
-    members: 15_843,
+    members: 67_000,
   },
 };

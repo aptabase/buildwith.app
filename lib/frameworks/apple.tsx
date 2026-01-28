@@ -61,15 +61,15 @@ export const apple: Framework = {
     first: "March 6, 2008",
   },
   href: "https://developer.apple.com/",
-  languages: ["Swift"],
-  platforms: ["iOS", "tvOS", "watchOS", "macOS"],
+  languages: ["Swift","Objective-C"],
+  platforms: ["iOS", "tvOS", "watchOS", "macOS","iPadOS", "visionOS"],
   reddit: {
     href: "https://reddit.com/r/iOSdev",
-    members: 125_000,
+    members: 23_200,
   },
   discord: {
     name: "iOS Development",
     href: "https://discord.com/invite/vVNXQZT",
-    members: 7_308,
+    members: 15_693,
   },
 };

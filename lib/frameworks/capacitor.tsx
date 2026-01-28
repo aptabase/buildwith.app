@@ -71,22 +71,22 @@ export const capacitor: Framework = {
   },
   href: "https://capacitorjs.com",
   languages: ["JavaScript", "TypeScript", "HTML", "CSS"],
-  platforms: ["iOS", "Android", "Web"],
+  platforms: ["iOS", "Android","Web","iPadOS","visionOS"],
   reddit: {
     href: "https://reddit.com/r/capacitor",
-    members: 498,
+    members: 1_800,
   },
   github: {
     href: "https://github.com/ionic-team/capacitor",
-    stars: 9_200,
+    stars: 14_700,
   },
   twitter: {
     slug: "capacitorjs",
-    followers: 16_900,
+    followers: 20_300,
   },
   discord: {
     name: "Ionic",
     href: "https://discord.com/invite/UPYYRhtyzp",
-    members: 6260,
+    members: 11_058,
   },
 };

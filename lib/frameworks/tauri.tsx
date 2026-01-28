@@ -74,22 +74,22 @@ export const tauri: Framework = {
   },
   href: "https://tauri.app",
   languages: ["Rust", "JavaScript", "TypeScript", "HTML", "CSS"],
-  platforms: ["Linux", "macOS", "Windows", "iOS", "Android"],
+  platforms: ["Linux", "macOS", "Windows", "iOS", "Android","iPadOS"],
   reddit: {
     href: "https://reddit.com/r/tauri",
-    members: 462,
+    members: 4_100,
   },
   github: {
     href: "https://github.com/tauri-apps/tauri",
-    stars: 62500,
+    stars: 101_000,
   },
   twitter: {
     slug: "TauriApps",
-    followers: 9_600,
+    followers: 18_500,
   },
   discord: {
     name: "Tauri Apps",
     href: "https://discord.com/invite/tauri",
-    members: 9_958,
+    members: 21_702,
   },
 };
